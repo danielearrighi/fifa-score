@@ -3,18 +3,12 @@ const path = require('path');
 
 const DATA_PATH = path.join(__dirname, 'Data', 'data.json');
 const GAMES_PATH = path.join(__dirname, 'Data', 'games.json');
-const INITIAL_GAMES_PATH = path.join(__dirname, 'Data', 'initial_games.json');
 
 // Initialize games.json if it doesn't exist
 function initGamesFile() {
   if (!fs.existsSync(GAMES_PATH)) {
-    if (fs.existsSync(INITIAL_GAMES_PATH)) {
-      fs.copyFileSync(INITIAL_GAMES_PATH, GAMES_PATH);
-      console.log('Initialized games.json from initial_games.json');
-    } else {
-      fs.writeFileSync(GAMES_PATH, JSON.stringify([], null, 2), 'utf8');
-      console.log('Created empty games.json');
-    }
+    fs.writeFileSync(GAMES_PATH, JSON.stringify([], null, 2), 'utf8');
+    console.log('Created empty games.json');
   }
 }
 
@@ -131,6 +125,5 @@ module.exports = {
   getMatchOutcome,
   isMatchFinished,
   DATA_PATH,
-  GAMES_PATH,
-  INITIAL_GAMES_PATH
+  GAMES_PATH
 };

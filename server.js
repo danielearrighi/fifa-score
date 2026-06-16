@@ -195,16 +195,77 @@ app.post('/api/simulate-match', (req, res) => {
   }
 });
 
-// 6. Reset route - Resets games back to initial state
-app.post('/api/reset-games', (req, res) => {
+// 6. Get all matches sorted chronologically
+app.get('/api/matches', (req, res) => {
   try {
-    if (fs.existsSync(scoreManager.INITIAL_GAMES_PATH)) {
-      fs.copyFileSync(scoreManager.INITIAL_GAMES_PATH, scoreManager.GAMES_PATH);
-      scoreManager.updateScores();
-      res.json({ success: true, message: 'Games and scores successfully reset to default.' });
-    } else {
-      res.status(404).json({ error: 'Initial games database not found.' });
+    const games = JSON.parse(fs.readFileSync(scoreManager.GAMES_PATH, 'utf8'));
+    const sortedGames = [...games].sort((a, b) => {
+      if (a.fixture.timestamp !== b.fixture.timestamp) {
+        return a.fixture.timestamp - b.fixture.timestamp;
+      }
+      return a.fixture.id - b.fixture.id;
+    });
+    res.json(sortedGames);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 7. Update match result manually
+app.post('/api/update-match', (req, res) => {
+  try {
+    const { matchId, homeGoals, awayGoals, status } = req.body;
+    
+    if (matchId === undefined) {
+      return res.status(400).json({ error: 'Match ID is required' });
     }
+    
+    const games = JSON.parse(fs.readFileSync(scoreManager.GAMES_PATH, 'utf8'));
+    const matchIndex = games.findIndex(g => g.fixture.id === parseInt(matchId, 10));
+    
+    if (matchIndex === -1) {
+      return res.status(404).json({ error: 'Match not found' });
+    }
+    
+    if (status === 'NS') {
+      games[matchIndex].goals = { home: null, away: null };
+      games[matchIndex].score = { fulltime: { home: null, away: null } };
+      games[matchIndex].fixture.status = { long: "Not Started", short: "NS" };
+    } else {
+      const parsedHome = parseInt(homeGoals, 10);
+      const parsedAway = parseInt(awayGoals, 10);
+      
+      if (isNaN(parsedHome) || parsedHome < 0 || isNaN(parsedAway) || parsedAway < 0) {
+        return res.status(400).json({ error: 'Invalid goals specified. They must be non-negative numbers.' });
+      }
+      
+      games[matchIndex].goals = { home: parsedHome, away: parsedAway };
+      games[matchIndex].score = { fulltime: { home: parsedHome, away: parsedAway } };
+      games[matchIndex].fixture.status = { long: "Match Finished", short: "FT" };
+    }
+    
+    fs.writeFileSync(scoreManager.GAMES_PATH, JSON.stringify(games, null, 2), 'utf8');
+    scoreManager.updateScores();
+    
+    res.json({
+      success: true,
+      message: `Updated match: ${games[matchIndex].teams.home.name} vs ${games[matchIndex].teams.away.name}`,
+      match: games[matchIndex]
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 8. Recalculate scores manually
+app.post('/api/recalculate', (req, res) => {
+  try {
+    const updatedPlayers = scoreManager.updateScores();
+    res.json({
+      success: true,
+      message: 'Classifica ricalcolata con successo.',
+      players: updatedPlayers
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

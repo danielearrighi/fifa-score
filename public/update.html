@@ -66,19 +66,27 @@
           </div>
         </section>
 
-        <!-- Simulation Card -->
+        <!-- Manual Result Entry Card -->
         <section class="card" style="border-color: rgba(245, 158, 11, 0.2);">
           <h2 class="card-title" style="color: var(--accent-gold);">
-            <i class="fa-solid fa-flask"></i> Sandbox di Simulazione (Offline)
+            <i class="fa-solid fa-pen-to-square"></i> Gestione Risultati (Manuale)
           </h2>
           <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
-            Non hai una chiave API? Nessun problema! Usa questi comandi per testare il funzionamento dell'applicazione e del calcolo dei punti.
+            Seleziona una qualsiasi partita per aggiornare il suo risultato o resettarla allo stato "Non Iniziata".
           </p>
           
-          <!-- Next match info and manual result input -->
+          <!-- Match Selector Dropdown -->
+          <div class="form-group">
+            <label class="form-label" for="manual-match-select">Seleziona Partita</label>
+            <select id="manual-match-select" class="form-input" style="max-height: 200px;">
+              <option value="">Caricamento partite...</option>
+            </select>
+          </div>
+          
+          <!-- Selected match info and manual result input -->
           <div id="sim-next-match-container" style="display: none; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
             <div style="text-align: center; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 600;">
-              Prossimo incontro da disputare
+              Partita Selezionata
             </div>
             
             <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
@@ -106,20 +114,34 @@
               </div>
             </div>
             <p style="font-size: 0.75rem; color: var(--text-secondary); text-align: center; margin-top: 1rem; margin-bottom: 0;">
-              <i class="fa-solid fa-circle-info"></i> Inserisci i gol per forzare il risultato, oppure lascia vuoto per simularlo casualmente.
+              <i class="fa-solid fa-circle-info"></i> Inserisci i gol per salvare il risultato, premi "Segna come Non Iniziata" per resettarla, oppure lascia vuoto e premi "Simula Risultato" per generarlo casualmente.
             </p>
-          </div>
-
-          <div id="sim-no-matches" style="display: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1.5rem; text-align: center; color: var(--text-secondary); font-size: 0.95rem;">
-            <i class="fa-solid fa-circle-check" style="color: var(--accent-green); margin-right: 0.5rem;"></i> Tutti i match del torneo sono terminati!
           </div>
           
           <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <button id="btn-simulate" class="btn" style="background-color: var(--accent-green);">
-              <i class="fa-solid fa-play"></i> Simula Risultato Prossima Partita
+            <button id="btn-save-result" class="btn" style="background-color: var(--accent-blue);" disabled>
+              <i class="fa-solid fa-save"></i> Salva Risultato
             </button>
-            <button id="btn-reset-games" class="btn btn-secondary">
-              <i class="fa-solid fa-trash-arrow-up"></i> Resetta Database a Default
+            <button id="btn-simulate" class="btn" style="background-color: var(--accent-green);" disabled>
+              <i class="fa-solid fa-play"></i> Simula Risultato Casuale
+            </button>
+            <button id="btn-reset-match" class="btn btn-secondary" disabled>
+              <i class="fa-solid fa-undo"></i> Segna come Non Iniziata
+            </button>
+          </div>
+        </section>
+
+        <!-- Recalculate Scores Card -->
+        <section class="card" style="border-color: rgba(16, 185, 129, 0.2);">
+          <h2 class="card-title" style="color: var(--accent-green);">
+            <i class="fa-solid fa-calculator"></i> Ricalcolo Classifica
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Confronta tutti i risultati reali salvati con i pronostici e aggiorna i punteggi dei giocatori.
+          </p>
+          <div class="update-actions">
+            <button id="btn-recalculate" class="btn btn-green">
+              <i class="fa-solid fa-calculator"></i> Ricalcola Risultati
             </button>
           </div>
         </section>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup 2026 - Dettaglio Giocatore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-container">
+        <i class="fa-solid fa-trophy logo-icon"></i>
+        <span class="logo-text">FIFA SCORE 2026</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active"><i class="fa-solid fa-ranking-star"></i> Classifica</a></li>
+        <li><a href="next-match.html" id="nav-next-match"><i class="fa-solid fa-calendar-day"></i> Prossima Partita</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Back to Standings Link/Button -->
+    <div style="margin-bottom: 1.5rem;">
+      <a href="index.html" class="btn btn-secondary" style="width: auto; display: inline-flex;">
+        <i class="fa-solid fa-chevron-left"></i> Torna alla Classifica
+      </a>
+    </div>
+
+    <!-- Hero / Player Info Card -->
+    <div class="hero" style="margin-bottom: 2rem; text-align: left;">
+      <h1 id="player-title">Pronostici Giocatore</h1>
+      <p id="player-subtitle" style="font-size: 1.25rem;">Caricamento informazioni...</p>
+    </div>
+
+    <!-- Detail Card -->
+    <section class="card">
+      <h2 class="card-title">
+        <i class="fa-solid fa-circle-info" style="color: var(--accent-gold);"></i> Scheda Pronostici e Risultati
+      </h2>
+      
+      <!-- Table Wrapper with custom styles to support compact view -->
+      <div style="overflow-x: auto; margin-top: 1rem;">
+        <table class="leaderboard-table compact-player-table">
+          <thead>
+            <tr>
+              <th style="width: 50px;">#</th>
+              <th>Partita</th>
+              <th style="text-align: center; width: 100px;">Risultato</th>
+              <th style="text-align: center; width: 80px;">Prono</th>
+              <th style="text-align: center; width: 100px;">Esito</th>
+            </tr>
+          </thead>
+          <tbody id="player-predictions-body">
+            <tr>
+              <td colspan="5" class="empty-state">
+                <div class="loader" style="margin-right: 8px;"></div> Caricamento dettagli giocatore...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 FIFA Score Tracker. Creato per il Mondiale 2026.</p>
+  </footer>
+
+  <script src="player.js"></script>
+</body>
+</html>

@@ -89,6 +89,10 @@ async function loadLeaderboard() {
       else if (rank === 3) rankClass = 'rank-3';
       
       const tr = document.createElement('tr');
+      tr.style.cursor = 'pointer';
+      tr.addEventListener('click', () => {
+        window.location.href = `player.html?player=${encodeURIComponent(player.Player)}`;
+      });
       tr.innerHTML = `
         <td>
           <span class="rank-badge ${rankClass}">${rank}</span>

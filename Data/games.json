@@ -51,13 +51,13 @@
       }
     },
     "goals": {
-      "home": 1,
-      "away": 2
+      "home": 2,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 1,
-        "away": 2
+        "home": 2,
+        "away": 1
       }
     }
   },
@@ -113,12 +113,12 @@
       }
     },
     "goals": {
-      "home": 3,
+      "home": 4,
       "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 3,
+        "home": 4,
         "away": 1
       }
     }
@@ -144,13 +144,13 @@
       }
     },
     "goals": {
-      "home": 0,
-      "away": 2
+      "home": 1,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 0,
-        "away": 2
+        "home": 1,
+        "away": 1
       }
     }
   },
@@ -175,12 +175,12 @@
       }
     },
     "goals": {
-      "home": 2,
+      "home": 1,
       "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 2,
+        "home": 1,
         "away": 1
       }
     }
@@ -197,22 +197,22 @@
     },
     "teams": {
       "home": {
-        "name": "Scotland",
-        "logo": "https://media.api-sports.io/football/teams/7.png"
-      },
-      "away": {
         "name": "Haiti",
         "logo": "https://media.api-sports.io/football/teams/106.png"
+      },
+      "away": {
+        "name": "Scotland",
+        "logo": "https://media.api-sports.io/football/teams/7.png"
       }
     },
     "goals": {
-      "home": 2,
-      "away": 0
+      "home": 0,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 2,
-        "away": 0
+        "home": 0,
+        "away": 1
       }
     }
   },
@@ -237,13 +237,13 @@
       }
     },
     "goals": {
-      "home": 1,
-      "away": 1
+      "home": 2,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": 1,
-        "away": 1
+        "home": 2,
+        "away": 0
       }
     }
   },
@@ -300,12 +300,12 @@
     },
     "goals": {
       "home": 2,
-      "away": 0
+      "away": 2
     },
     "score": {
       "fulltime": {
         "home": 2,
-        "away": 0
+        "away": 2
       }
     }
   },
@@ -331,12 +331,12 @@
     },
     "goals": {
       "home": 1,
-      "away": 2
+      "away": 0
     },
     "score": {
       "fulltime": {
         "home": 1,
-        "away": 2
+        "away": 0
       }
     }
   },
@@ -361,13 +361,13 @@
       }
     },
     "goals": {
-      "home": 1,
-      "away": 0
+      "home": 5,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 1,
-        "away": 0
+        "home": 5,
+        "away": 1
       }
     }
   },
@@ -392,12 +392,12 @@
       }
     },
     "goals": {
-      "home": 3,
+      "home": 0,
       "away": 0
     },
     "score": {
       "fulltime": {
-        "home": 3,
+        "home": 0,
         "away": 0
       }
     }
@@ -423,13 +423,13 @@
       }
     },
     "goals": {
-      "home": 2,
-      "away": 0
+      "home": 1,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": 2,
-        "away": 0
+        "home": 1,
+        "away": 1
       }
     }
   },
@@ -455,12 +455,12 @@
     },
     "goals": {
       "home": 1,
-      "away": 2
+      "away": 1
     },
     "score": {
       "fulltime": {
         "home": 1,
-        "away": 2
+        "away": 1
       }
     }
   },
@@ -485,13 +485,13 @@
       }
     },
     "goals": {
-      "home": 1,
-      "away": 1
+      "home": 2,
+      "away": 2
     },
     "score": {
       "fulltime": {
-        "home": 1,
-        "away": 1
+        "home": 2,
+        "away": 2
       }
     }
   },
