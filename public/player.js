@@ -129,7 +129,9 @@ async function loadPlayerData(playerName) {
     
     const predictions = player.Predictions || [];
     
-    sortedGames.forEach((game, index) => {
+    const gamesToShow = sortedGames.slice(0, 50);
+    
+    gamesToShow.forEach((game, index) => {
       const matchNumber = index + 1;
       const homeFlag = getFlagUrl(game.teams.home.name, game.teams.home.logo);
       const awayFlag = getFlagUrl(game.teams.away.name, game.teams.away.logo);

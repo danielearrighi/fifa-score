@@ -2,10 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   setupNavbarLink();
   
   const consoleEl = document.getElementById('status-console');
-  const apiKeyInput = document.getElementById('api-key-input');
-  const providerSelect = document.getElementById('api-provider-select');
-  
   const btnSync = document.getElementById('btn-sync-api');
+  const btnFetchRealtime = document.getElementById('btn-fetch-realtime');
   const btnSaveResult = document.getElementById('btn-save-result');
   const btnSimulate = document.getElementById('btn-simulate');
   const btnResetMatch = document.getElementById('btn-reset-match');
@@ -165,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnSaveResult.disabled = true;
       btnSimulate.disabled = true;
       btnResetMatch.disabled = true;
+      btnFetchRealtime.disabled = true;
       return;
     }
 
@@ -172,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnSaveResult.disabled = false;
     btnSimulate.disabled = false;
     btnResetMatch.disabled = false;
+    btnFetchRealtime.disabled = false;
 
     const homeFlag = getFlagUrl(game.teams.home.name, game.teams.home.logo);
     const awayFlag = getFlagUrl(game.teams.away.name, game.teams.away.logo);
@@ -208,12 +208,9 @@ document.addEventListener('DOMContentLoaded', () => {
     consoleEl.innerHTML = 'In attesa di comandi...';
   });
   
-  // 1. Sync from API
+  // 1. Sync from API (All games)
   btnSync.addEventListener('click', async () => {
-    const apiKey = apiKeyInput.value.trim();
-    const provider = providerSelect.value;
-    
-    log('Avvio sincronizzazione con API-Football...', 'loading');
+    log('Avvio sincronizzazione automatica di tutte le partite...', 'loading');
     btnSync.disabled = true;
     
     try {
@@ -222,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ apiKey, provider })
+        body: JSON.stringify({})
       });
       
       const data = await response.json();
@@ -234,10 +231,54 @@ document.addEventListener('DOMContentLoaded', () => {
       log(`Sincronizzazione completata! ${data.message}`, 'success');
     } catch (err) {
       log(`Errore di sincronizzazione: ${err.message}`, 'error');
-      log('Suggerimento: Controlla che la tua API Key sia corretta o inserisci i risultati manualmente.', 'info');
     } finally {
       btnSync.disabled = false;
       loadAllMatches(); // Refresh matches list
+    }
+  });
+
+  // 1b. Fetch realtime score for single match
+  btnFetchRealtime.addEventListener('click', async () => {
+    const matchId = manualMatchSelect.value;
+    if (!matchId) return;
+
+    const game = allGames.find(g => g.fixture.id === parseInt(matchId, 10));
+    if (!game) return;
+
+    log(`Recupero risultati in tempo reale da API...`, 'loading');
+    btnFetchRealtime.disabled = true;
+
+    try {
+      const response = await fetch(`https://worldcup26.ir/get/games`);
+      if (!response.ok) {
+        throw new Error(`Risposta API non valida: ${response.status} ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      if (!data.games || !Array.isArray(data.games)) {
+        throw new Error('Nessun dato partite restituito dall\'API.');
+      }
+
+      // Find the match in the list of games by numeric ID
+      const apiGame = data.games.find(g => parseInt(g.id, 10) === game.fixture.id);
+      if (!apiGame) {
+        throw new Error(`Partita con ID ${game.fixture.id} non trovata nell'API.`);
+      }
+
+      const isFinished = apiGame.finished === "TRUE";
+      const homeScore = apiGame.home_score !== "null" && apiGame.home_score !== null ? apiGame.home_score : "0";
+      const awayScore = apiGame.away_score !== "null" && apiGame.away_score !== null ? apiGame.away_score : "0";
+
+      // Fill in input fields
+      simHomeGoalsInput.value = homeScore;
+      simAwayGoalsInput.value = awayScore;
+
+      log(`Dati recuperati per ${game.teams.home.name} - ${game.teams.away.name}! Risultato: ${homeScore} - ${awayScore} (${isFinished ? 'Terminata' : 'In corso/Non iniziata'})`, 'success');
+      log(`Premi "Salva Risultato" per confermare ed applicare le modifiche.`, 'info');
+    } catch (err) {
+      log(`Errore nel recupero in tempo reale: ${err.message}`, 'error');
+    } finally {
+      btnFetchRealtime.disabled = false;
     }
   });
   

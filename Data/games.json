@@ -1,9 +1,10 @@
 [
   {
     "fixture": {
-      "id": 100001,
-      "date": "2026-06-11T23:00:00.000Z",
-      "timestamp": 1781218800,
+      "id": 1,
+      "apiId": "679c9c8a5749c4077500e001",
+      "date": "2026-06-11T19:00:00.000Z",
+      "timestamp": 1781204400,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -12,11 +13,11 @@
     "teams": {
       "home": {
         "name": "Mexico",
-        "logo": "https://media.api-sports.io/football/teams/1.png"
+        "logo": "https://flagcdn.com/w80/mx.png"
       },
       "away": {
         "name": "South Africa",
-        "logo": "https://media.api-sports.io/football/teams/100.png"
+        "logo": "https://flagcdn.com/w80/za.png"
       }
     },
     "goals": {
@@ -32,9 +33,10 @@
   },
   {
     "fixture": {
-      "id": 100002,
-      "date": "2026-06-12T02:30:00.000Z",
-      "timestamp": 1781231400,
+      "id": 2,
+      "apiId": "679c9c8a5749c4077500e002",
+      "date": "2026-06-12T02:00:00.000Z",
+      "timestamp": 1781229600,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -43,11 +45,11 @@
     "teams": {
       "home": {
         "name": "South Korea",
-        "logo": "https://media.api-sports.io/football/teams/2.png"
+        "logo": "https://flagcdn.com/w80/kr.png"
       },
       "away": {
-        "name": "Czechia",
-        "logo": "https://media.api-sports.io/football/teams/101.png"
+        "name": "Czech Republic",
+        "logo": "https://flagcdn.com/w80/cz.png"
       }
     },
     "goals": {
@@ -63,9 +65,10 @@
   },
   {
     "fixture": {
-      "id": 100003,
-      "date": "2026-06-12T22:00:00.000Z",
-      "timestamp": 1781301600,
+      "id": 3,
+      "apiId": "679c9c8a5749c4077500e003",
+      "date": "2026-06-12T19:00:00.000Z",
+      "timestamp": 1781290800,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -74,11 +77,11 @@
     "teams": {
       "home": {
         "name": "Canada",
-        "logo": "https://media.api-sports.io/football/teams/3.png"
+        "logo": "https://flagcdn.com/w80/ca.png"
       },
       "away": {
         "name": "Bosnia and Herzegovina",
-        "logo": "https://media.api-sports.io/football/teams/102.png"
+        "logo": "https://flagcdn.com/w80/ba.png"
       }
     },
     "goals": {
@@ -94,9 +97,10 @@
   },
   {
     "fixture": {
-      "id": 100004,
-      "date": "2026-06-13T01:30:00.000Z",
-      "timestamp": 1781314200,
+      "id": 4,
+      "apiId": "679c9c8a5749c4077500e004",
+      "date": "2026-06-13T01:00:00.000Z",
+      "timestamp": 1781312400,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -104,12 +108,12 @@
     },
     "teams": {
       "home": {
-        "name": "USA",
-        "logo": "https://media.api-sports.io/football/teams/4.png"
+        "name": "United States",
+        "logo": "https://flagcdn.com/w80/us.png"
       },
       "away": {
         "name": "Paraguay",
-        "logo": "https://media.api-sports.io/football/teams/103.png"
+        "logo": "https://flagcdn.com/w80/py.png"
       }
     },
     "goals": {
@@ -125,7 +129,8 @@
   },
   {
     "fixture": {
-      "id": 100005,
+      "id": 8,
+      "apiId": "679c9c8a5749c4077500e008",
       "date": "2026-06-13T19:00:00.000Z",
       "timestamp": 1781377200,
       "status": {
@@ -136,11 +141,11 @@
     "teams": {
       "home": {
         "name": "Qatar",
-        "logo": "https://media.api-sports.io/football/teams/5.png"
+        "logo": "https://flagcdn.com/w80/qa.png"
       },
       "away": {
         "name": "Switzerland",
-        "logo": "https://media.api-sports.io/football/teams/104.png"
+        "logo": "https://flagcdn.com/w80/ch.png"
       }
     },
     "goals": {
@@ -156,7 +161,8 @@
   },
   {
     "fixture": {
-      "id": 100006,
+      "id": 7,
+      "apiId": "679c9c8a5749c4077500e007",
       "date": "2026-06-13T22:00:00.000Z",
       "timestamp": 1781388000,
       "status": {
@@ -167,11 +173,11 @@
     "teams": {
       "home": {
         "name": "Brazil",
-        "logo": "https://media.api-sports.io/football/teams/6.png"
+        "logo": "https://flagcdn.com/w80/br.png"
       },
       "away": {
         "name": "Morocco",
-        "logo": "https://media.api-sports.io/football/teams/105.png"
+        "logo": "https://flagcdn.com/w80/ma.png"
       }
     },
     "goals": {
@@ -187,7 +193,8 @@
   },
   {
     "fixture": {
-      "id": 100007,
+      "id": 5,
+      "apiId": "679c9c8a5749c4077500e005",
       "date": "2026-06-14T01:00:00.000Z",
       "timestamp": 1781398800,
       "status": {
@@ -198,11 +205,11 @@
     "teams": {
       "home": {
         "name": "Haiti",
-        "logo": "https://media.api-sports.io/football/teams/106.png"
+        "logo": "https://flagcdn.com/w80/ht.png"
       },
       "away": {
         "name": "Scotland",
-        "logo": "https://media.api-sports.io/football/teams/7.png"
+        "logo": "https://flagcdn.com/w80/gb-sct.png"
       }
     },
     "goals": {
@@ -218,7 +225,8 @@
   },
   {
     "fixture": {
-      "id": 100008,
+      "id": 6,
+      "apiId": "679c9c8a5749c4077500e006",
       "date": "2026-06-14T04:00:00.000Z",
       "timestamp": 1781409600,
       "status": {
@@ -229,11 +237,11 @@
     "teams": {
       "home": {
         "name": "Australia",
-        "logo": "https://media.api-sports.io/football/teams/8.png"
+        "logo": "https://flagcdn.com/w80/au.png"
       },
       "away": {
-        "name": "Türkiye",
-        "logo": "https://media.api-sports.io/football/teams/107.png"
+        "name": "Turkey",
+        "logo": "https://flagcdn.com/w80/tr.png"
       }
     },
     "goals": {
@@ -249,9 +257,10 @@
   },
   {
     "fixture": {
-      "id": 100009,
-      "date": "2026-06-14T19:00:00.000Z",
-      "timestamp": 1781463600,
+      "id": 10,
+      "apiId": "679c9c8a5749c4077500e010",
+      "date": "2026-06-14T17:00:00.000Z",
+      "timestamp": 1781456400,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -260,11 +269,11 @@
     "teams": {
       "home": {
         "name": "Germany",
-        "logo": "https://media.api-sports.io/football/teams/9.png"
+        "logo": "https://flagcdn.com/w80/de.png"
       },
       "away": {
         "name": "Curaçao",
-        "logo": "https://media.api-sports.io/football/teams/108.png"
+        "logo": "https://flagcdn.com/w80/cw.png"
       }
     },
     "goals": {
@@ -280,9 +289,10 @@
   },
   {
     "fixture": {
-      "id": 100010,
-      "date": "2026-06-14T22:00:00.000Z",
-      "timestamp": 1781474400,
+      "id": 11,
+      "apiId": "679c9c8a5749c4077500e011",
+      "date": "2026-06-14T20:00:00.000Z",
+      "timestamp": 1781467200,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -291,11 +301,11 @@
     "teams": {
       "home": {
         "name": "Netherlands",
-        "logo": "https://media.api-sports.io/football/teams/10.png"
+        "logo": "https://flagcdn.com/w80/nl.png"
       },
       "away": {
         "name": "Japan",
-        "logo": "https://media.api-sports.io/football/teams/109.png"
+        "logo": "https://flagcdn.com/w80/jp.png"
       }
     },
     "goals": {
@@ -311,9 +321,10 @@
   },
   {
     "fixture": {
-      "id": 100011,
-      "date": "2026-06-15T01:00:00.000Z",
-      "timestamp": 1781485200,
+      "id": 9,
+      "apiId": "679c9c8a5749c4077500e009",
+      "date": "2026-06-14T23:00:00.000Z",
+      "timestamp": 1781478000,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -322,11 +333,11 @@
     "teams": {
       "home": {
         "name": "Ivory Coast",
-        "logo": "https://media.api-sports.io/football/teams/11.png"
+        "logo": "https://flagcdn.com/w80/ci.png"
       },
       "away": {
         "name": "Ecuador",
-        "logo": "https://media.api-sports.io/football/teams/110.png"
+        "logo": "https://flagcdn.com/w80/ec.png"
       }
     },
     "goals": {
@@ -342,9 +353,10 @@
   },
   {
     "fixture": {
-      "id": 100012,
-      "date": "2026-06-15T04:00:00.000Z",
-      "timestamp": 1781496000,
+      "id": 12,
+      "apiId": "679c9c8a5749c4077500e012",
+      "date": "2026-06-15T02:00:00.000Z",
+      "timestamp": 1781488800,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -353,11 +365,11 @@
     "teams": {
       "home": {
         "name": "Sweden",
-        "logo": "https://media.api-sports.io/football/teams/12.png"
+        "logo": "https://flagcdn.com/w80/se.png"
       },
       "away": {
         "name": "Tunisia",
-        "logo": "https://media.api-sports.io/football/teams/111.png"
+        "logo": "https://flagcdn.com/w80/tn.png"
       }
     },
     "goals": {
@@ -373,9 +385,10 @@
   },
   {
     "fixture": {
-      "id": 100013,
-      "date": "2026-06-15T19:00:00.000Z",
-      "timestamp": 1781550000,
+      "id": 14,
+      "apiId": "679c9c8a5749c4077500e014",
+      "date": "2026-06-15T16:00:00.000Z",
+      "timestamp": 1781539200,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -384,11 +397,11 @@
     "teams": {
       "home": {
         "name": "Spain",
-        "logo": "https://media.api-sports.io/football/teams/13.png"
+        "logo": "https://flagcdn.com/w80/es.png"
       },
       "away": {
         "name": "Cape Verde",
-        "logo": "https://media.api-sports.io/football/teams/112.png"
+        "logo": "https://flagcdn.com/w80/cv.png"
       }
     },
     "goals": {
@@ -404,7 +417,40 @@
   },
   {
     "fixture": {
-      "id": 100014,
+      "id": 15,
+      "apiId": "679c9c8a5749c4077500e015",
+      "date": "2026-06-15T19:00:00.000Z",
+      "timestamp": 1781550000,
+      "status": {
+        "long": "Match Finished",
+        "short": "FT"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Belgium",
+        "logo": "https://flagcdn.com/w80/be.png"
+      },
+      "away": {
+        "name": "Egypt",
+        "logo": "https://flagcdn.com/w80/eg.png"
+      }
+    },
+    "goals": {
+      "home": 1,
+      "away": 1
+    },
+    "score": {
+      "fulltime": {
+        "home": 1,
+        "away": 1
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 16,
+      "apiId": "679c9c8a5749c4077500e016",
       "date": "2026-06-15T22:00:00.000Z",
       "timestamp": 1781560800,
       "status": {
@@ -414,12 +460,12 @@
     },
     "teams": {
       "home": {
-        "name": "Belgium",
-        "logo": "https://media.api-sports.io/football/teams/14.png"
+        "name": "Saudi Arabia",
+        "logo": "https://flagcdn.com/w80/sa.png"
       },
       "away": {
-        "name": "Egypt",
-        "logo": "https://media.api-sports.io/football/teams/113.png"
+        "name": "Uruguay",
+        "logo": "https://flagcdn.com/w80/uy.png"
       }
     },
     "goals": {
@@ -435,7 +481,8 @@
   },
   {
     "fixture": {
-      "id": 100015,
+      "id": 13,
+      "apiId": "679c9c8a5749c4077500e013",
       "date": "2026-06-16T01:00:00.000Z",
       "timestamp": 1781571600,
       "status": {
@@ -445,43 +492,12 @@
     },
     "teams": {
       "home": {
-        "name": "Saudi Arabia",
-        "logo": "https://media.api-sports.io/football/teams/15.png"
-      },
-      "away": {
-        "name": "Uruguay",
-        "logo": "https://media.api-sports.io/football/teams/114.png"
-      }
-    },
-    "goals": {
-      "home": 1,
-      "away": 1
-    },
-    "score": {
-      "fulltime": {
-        "home": 1,
-        "away": 1
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100016,
-      "date": "2026-06-16T04:00:00.000Z",
-      "timestamp": 1781582400,
-      "status": {
-        "long": "Match Finished",
-        "short": "FT"
-      }
-    },
-    "teams": {
-      "home": {
         "name": "Iran",
-        "logo": "https://media.api-sports.io/football/teams/16.png"
+        "logo": "https://flagcdn.com/w80/ir.png"
       },
       "away": {
         "name": "New Zealand",
-        "logo": "https://media.api-sports.io/football/teams/115.png"
+        "logo": "https://flagcdn.com/w80/nz.png"
       }
     },
     "goals": {
@@ -497,7 +513,8 @@
   },
   {
     "fixture": {
-      "id": 100017,
+      "id": 17,
+      "apiId": "679c9c8a5749c4077500e017",
       "date": "2026-06-16T19:00:00.000Z",
       "timestamp": 1781636400,
       "status": {
@@ -508,11 +525,11 @@
     "teams": {
       "home": {
         "name": "France",
-        "logo": "https://media.api-sports.io/football/teams/17.png"
+        "logo": "https://flagcdn.com/w80/fr.png"
       },
       "away": {
         "name": "Senegal",
-        "logo": "https://media.api-sports.io/football/teams/116.png"
+        "logo": "https://flagcdn.com/w80/sn.png"
       }
     },
     "goals": {
@@ -528,7 +545,8 @@
   },
   {
     "fixture": {
-      "id": 100018,
+      "id": 18,
+      "apiId": "679c9c8a5749c4077500e018",
       "date": "2026-06-16T22:00:00.000Z",
       "timestamp": 1781647200,
       "status": {
@@ -538,12 +556,12 @@
     },
     "teams": {
       "home": {
-        "name": "Argentina",
-        "logo": "https://media.api-sports.io/football/teams/18.png"
+        "name": "Iraq",
+        "logo": "https://flagcdn.com/w80/iq.png"
       },
       "away": {
-        "name": "Algeria",
-        "logo": "https://media.api-sports.io/football/teams/117.png"
+        "name": "Norway",
+        "logo": "https://flagcdn.com/w80/no.png"
       }
     },
     "goals": {
@@ -559,7 +577,8 @@
   },
   {
     "fixture": {
-      "id": 100019,
+      "id": 19,
+      "apiId": "679c9c8a5749c4077500e019",
       "date": "2026-06-17T01:00:00.000Z",
       "timestamp": 1781658000,
       "status": {
@@ -569,12 +588,12 @@
     },
     "teams": {
       "home": {
-        "name": "Norway",
-        "logo": "https://media.api-sports.io/football/teams/19.png"
+        "name": "Argentina",
+        "logo": "https://flagcdn.com/w80/ar.png"
       },
       "away": {
-        "name": "Iraq",
-        "logo": "https://media.api-sports.io/football/teams/118.png"
+        "name": "Algeria",
+        "logo": "https://flagcdn.com/w80/dz.png"
       }
     },
     "goals": {
@@ -590,7 +609,8 @@
   },
   {
     "fixture": {
-      "id": 100020,
+      "id": 20,
+      "apiId": "679c9c8a5749c4077500e020",
       "date": "2026-06-17T04:00:00.000Z",
       "timestamp": 1781668800,
       "status": {
@@ -601,11 +621,11 @@
     "teams": {
       "home": {
         "name": "Austria",
-        "logo": "https://media.api-sports.io/football/teams/20.png"
+        "logo": "https://flagcdn.com/w80/at.png"
       },
       "away": {
         "name": "Jordan",
-        "logo": "https://media.api-sports.io/football/teams/119.png"
+        "logo": "https://flagcdn.com/w80/jo.png"
       }
     },
     "goals": {
@@ -621,9 +641,42 @@
   },
   {
     "fixture": {
-      "id": 100021,
-      "date": "2026-06-17T19:00:00.000Z",
-      "timestamp": 1781722800,
+      "id": 21,
+      "apiId": "679c9c8a5749c4077500e021",
+      "date": "2026-06-17T17:00:00.000Z",
+      "timestamp": 1781715600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Portugal",
+        "logo": "https://flagcdn.com/w80/pt.png"
+      },
+      "away": {
+        "name": "Democratic Republic of the Congo",
+        "logo": "https://flagcdn.com/w80/cd.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 22,
+      "apiId": "679c9c8a5749c4077500e022",
+      "date": "2026-06-17T20:00:00.000Z",
+      "timestamp": 1781726400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -632,11 +685,11 @@
     "teams": {
       "home": {
         "name": "England",
-        "logo": "https://media.api-sports.io/football/teams/21.png"
+        "logo": "https://flagcdn.com/w80/gb-eng.png"
       },
       "away": {
         "name": "Croatia",
-        "logo": "https://media.api-sports.io/football/teams/120.png"
+        "logo": "https://flagcdn.com/w80/hr.png"
       }
     },
     "goals": {
@@ -652,9 +705,10 @@
   },
   {
     "fixture": {
-      "id": 100022,
-      "date": "2026-06-17T22:00:00.000Z",
-      "timestamp": 1781733600,
+      "id": 24,
+      "apiId": "679c9c8a5749c4077500e024",
+      "date": "2026-06-17T23:00:00.000Z",
+      "timestamp": 1781737200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -662,12 +716,12 @@
     },
     "teams": {
       "home": {
-        "name": "Italy",
-        "logo": "https://media.api-sports.io/football/teams/22.png"
+        "name": "Ghana",
+        "logo": "https://flagcdn.com/w80/gh.png"
       },
       "away": {
-        "name": "Cameroon",
-        "logo": "https://media.api-sports.io/football/teams/121.png"
+        "name": "Panama",
+        "logo": "https://flagcdn.com/w80/pa.png"
       }
     },
     "goals": {
@@ -683,9 +737,10 @@
   },
   {
     "fixture": {
-      "id": 100023,
-      "date": "2026-06-18T01:00:00.000Z",
-      "timestamp": 1781744400,
+      "id": 23,
+      "apiId": "679c9c8a5749c4077500e023",
+      "date": "2026-06-18T02:00:00.000Z",
+      "timestamp": 1781748000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -693,12 +748,12 @@
     },
     "teams": {
       "home": {
-        "name": "Colombia",
-        "logo": "https://media.api-sports.io/football/teams/23.png"
-      },
-      "away": {
         "name": "Uzbekistan",
-        "logo": "https://media.api-sports.io/football/teams/122.png"
+        "logo": "https://flagcdn.com/w80/uz.png"
+      },
+      "away": {
+        "name": "Colombia",
+        "logo": "https://flagcdn.com/w80/co.png"
       }
     },
     "goals": {
@@ -714,9 +769,10 @@
   },
   {
     "fixture": {
-      "id": 100024,
-      "date": "2026-06-18T04:00:00.000Z",
-      "timestamp": 1781755200,
+      "id": 28,
+      "apiId": "679c9c8a5749c4077500e028",
+      "date": "2026-06-18T16:00:00.000Z",
+      "timestamp": 1781798400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -724,12 +780,12 @@
     },
     "teams": {
       "home": {
-        "name": "Denmark",
-        "logo": "https://media.api-sports.io/football/teams/24.png"
+        "name": "Czech Republic",
+        "logo": "https://flagcdn.com/w80/cz.png"
       },
       "away": {
-        "name": "Angola",
-        "logo": "https://media.api-sports.io/football/teams/123.png"
+        "name": "South Africa",
+        "logo": "https://flagcdn.com/w80/za.png"
       }
     },
     "goals": {
@@ -745,7 +801,8 @@
   },
   {
     "fixture": {
-      "id": 100025,
+      "id": 26,
+      "apiId": "679c9c8a5749c4077500e026",
       "date": "2026-06-18T19:00:00.000Z",
       "timestamp": 1781809200,
       "status": {
@@ -755,12 +812,12 @@
     },
     "teams": {
       "home": {
-        "name": "Portugal",
-        "logo": "https://media.api-sports.io/football/teams/25.png"
+        "name": "Switzerland",
+        "logo": "https://flagcdn.com/w80/ch.png"
       },
       "away": {
-        "name": "Panama",
-        "logo": "https://media.api-sports.io/football/teams/124.png"
+        "name": "Bosnia and Herzegovina",
+        "logo": "https://flagcdn.com/w80/ba.png"
       }
     },
     "goals": {
@@ -776,7 +833,8 @@
   },
   {
     "fixture": {
-      "id": 100026,
+      "id": 27,
+      "apiId": "679c9c8a5749c4077500e027",
       "date": "2026-06-18T22:00:00.000Z",
       "timestamp": 1781820000,
       "status": {
@@ -786,12 +844,12 @@
     },
     "teams": {
       "home": {
-        "name": "Mexico",
-        "logo": "https://media.api-sports.io/football/teams/26.png"
+        "name": "Canada",
+        "logo": "https://flagcdn.com/w80/ca.png"
       },
       "away": {
-        "name": "Czechia",
-        "logo": "https://media.api-sports.io/football/teams/125.png"
+        "name": "Qatar",
+        "logo": "https://flagcdn.com/w80/qa.png"
       }
     },
     "goals": {
@@ -807,7 +865,8 @@
   },
   {
     "fixture": {
-      "id": 100027,
+      "id": 25,
+      "apiId": "679c9c8a5749c4077500e025",
       "date": "2026-06-19T01:00:00.000Z",
       "timestamp": 1781830800,
       "status": {
@@ -817,12 +876,12 @@
     },
     "teams": {
       "home": {
+        "name": "Mexico",
+        "logo": "https://flagcdn.com/w80/mx.png"
+      },
+      "away": {
         "name": "South Korea",
-        "logo": "https://media.api-sports.io/football/teams/27.png"
-      },
-      "away": {
-        "name": "South Africa",
-        "logo": "https://media.api-sports.io/football/teams/126.png"
+        "logo": "https://flagcdn.com/w80/kr.png"
       }
     },
     "goals": {
@@ -838,38 +897,8 @@
   },
   {
     "fixture": {
-      "id": 100028,
-      "date": "2026-06-19T04:00:00.000Z",
-      "timestamp": 1781841600,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "Canada",
-        "logo": "https://media.api-sports.io/football/teams/28.png"
-      },
-      "away": {
-        "name": "Switzerland",
-        "logo": "https://media.api-sports.io/football/teams/127.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100029,
+      "id": 31,
+      "apiId": "679c9c8a5749c4077500e031",
       "date": "2026-06-19T19:00:00.000Z",
       "timestamp": 1781895600,
       "status": {
@@ -879,12 +908,12 @@
     },
     "teams": {
       "home": {
-        "name": "Qatar",
-        "logo": "https://media.api-sports.io/football/teams/29.png"
+        "name": "United States",
+        "logo": "https://flagcdn.com/w80/us.png"
       },
       "away": {
-        "name": "Bosnia and Herzegovina",
-        "logo": "https://media.api-sports.io/football/teams/128.png"
+        "name": "Australia",
+        "logo": "https://flagcdn.com/w80/au.png"
       }
     },
     "goals": {
@@ -900,7 +929,8 @@
   },
   {
     "fixture": {
-      "id": 100030,
+      "id": 30,
+      "apiId": "679c9c8a5749c4077500e030",
       "date": "2026-06-19T22:00:00.000Z",
       "timestamp": 1781906400,
       "status": {
@@ -910,12 +940,12 @@
     },
     "teams": {
       "home": {
-        "name": "Brazil",
-        "logo": "https://media.api-sports.io/football/teams/30.png"
+        "name": "Scotland",
+        "logo": "https://flagcdn.com/w80/gb-sct.png"
       },
       "away": {
-        "name": "Haiti",
-        "logo": "https://media.api-sports.io/football/teams/129.png"
+        "name": "Morocco",
+        "logo": "https://flagcdn.com/w80/ma.png"
       }
     },
     "goals": {
@@ -931,7 +961,8 @@
   },
   {
     "fixture": {
-      "id": 100031,
+      "id": 29,
+      "apiId": "679c9c8a5749c4077500e029",
       "date": "2026-06-20T01:00:00.000Z",
       "timestamp": 1781917200,
       "status": {
@@ -941,12 +972,12 @@
     },
     "teams": {
       "home": {
-        "name": "Scotland",
-        "logo": "https://media.api-sports.io/football/teams/31.png"
+        "name": "Brazil",
+        "logo": "https://flagcdn.com/w80/br.png"
       },
       "away": {
-        "name": "Morocco",
-        "logo": "https://media.api-sports.io/football/teams/130.png"
+        "name": "Haiti",
+        "logo": "https://flagcdn.com/w80/ht.png"
       }
     },
     "goals": {
@@ -962,9 +993,10 @@
   },
   {
     "fixture": {
-      "id": 100032,
-      "date": "2026-06-20T04:00:00.000Z",
-      "timestamp": 1781928000,
+      "id": 32,
+      "apiId": "679c9c8a5749c4077500e032",
+      "date": "2026-06-20T03:00:00.000Z",
+      "timestamp": 1781924400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -972,43 +1004,12 @@
     },
     "teams": {
       "home": {
-        "name": "USA",
-        "logo": "https://media.api-sports.io/football/teams/32.png"
-      },
-      "away": {
-        "name": "Türkiye",
-        "logo": "https://media.api-sports.io/football/teams/131.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100033,
-      "date": "2026-06-20T19:00:00.000Z",
-      "timestamp": 1781982000,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "Australia",
-        "logo": "https://media.api-sports.io/football/teams/33.png"
+        "name": "Turkey",
+        "logo": "https://flagcdn.com/w80/tr.png"
       },
       "away": {
         "name": "Paraguay",
-        "logo": "https://media.api-sports.io/football/teams/132.png"
+        "logo": "https://flagcdn.com/w80/py.png"
       }
     },
     "goals": {
@@ -1024,9 +1025,42 @@
   },
   {
     "fixture": {
-      "id": 100034,
-      "date": "2026-06-20T22:00:00.000Z",
-      "timestamp": 1781992800,
+      "id": 35,
+      "apiId": "679c9c8a5749c4077500e035",
+      "date": "2026-06-20T17:00:00.000Z",
+      "timestamp": 1781974800,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Netherlands",
+        "logo": "https://flagcdn.com/w80/nl.png"
+      },
+      "away": {
+        "name": "Sweden",
+        "logo": "https://flagcdn.com/w80/se.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 33,
+      "apiId": "679c9c8a5749c4077500e033",
+      "date": "2026-06-20T20:00:00.000Z",
+      "timestamp": 1781985600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1035,11 +1069,11 @@
     "teams": {
       "home": {
         "name": "Germany",
-        "logo": "https://media.api-sports.io/football/teams/34.png"
+        "logo": "https://flagcdn.com/w80/de.png"
       },
       "away": {
-        "name": "Ecuador",
-        "logo": "https://media.api-sports.io/football/teams/133.png"
+        "name": "Ivory Coast",
+        "logo": "https://flagcdn.com/w80/ci.png"
       }
     },
     "goals": {
@@ -1055,9 +1089,10 @@
   },
   {
     "fixture": {
-      "id": 100035,
-      "date": "2026-06-21T01:00:00.000Z",
-      "timestamp": 1782003600,
+      "id": 34,
+      "apiId": "679c9c8a5749c4077500e034",
+      "date": "2026-06-21T00:00:00.000Z",
+      "timestamp": 1782000000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1065,12 +1100,12 @@
     },
     "teams": {
       "home": {
-        "name": "Ivory Coast",
-        "logo": "https://media.api-sports.io/football/teams/35.png"
+        "name": "Ecuador",
+        "logo": "https://flagcdn.com/w80/ec.png"
       },
       "away": {
         "name": "Curaçao",
-        "logo": "https://media.api-sports.io/football/teams/134.png"
+        "logo": "https://flagcdn.com/w80/cw.png"
       }
     },
     "goals": {
@@ -1086,7 +1121,8 @@
   },
   {
     "fixture": {
-      "id": 100036,
+      "id": 36,
+      "apiId": "679c9c8a5749c4077500e036",
       "date": "2026-06-21T04:00:00.000Z",
       "timestamp": 1782014400,
       "status": {
@@ -1096,12 +1132,12 @@
     },
     "teams": {
       "home": {
-        "name": "Netherlands",
-        "logo": "https://media.api-sports.io/football/teams/36.png"
+        "name": "Tunisia",
+        "logo": "https://flagcdn.com/w80/tn.png"
       },
       "away": {
-        "name": "Tunisia",
-        "logo": "https://media.api-sports.io/football/teams/135.png"
+        "name": "Japan",
+        "logo": "https://flagcdn.com/w80/jp.png"
       }
     },
     "goals": {
@@ -1117,7 +1153,40 @@
   },
   {
     "fixture": {
-      "id": 100037,
+      "id": 39,
+      "apiId": "679c9c8a5749c4077500e039",
+      "date": "2026-06-21T16:00:00.000Z",
+      "timestamp": 1782057600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Spain",
+        "logo": "https://flagcdn.com/w80/es.png"
+      },
+      "away": {
+        "name": "Saudi Arabia",
+        "logo": "https://flagcdn.com/w80/sa.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 37,
+      "apiId": "679c9c8a5749c4077500e037",
       "date": "2026-06-21T19:00:00.000Z",
       "timestamp": 1782068400,
       "status": {
@@ -1127,12 +1196,12 @@
     },
     "teams": {
       "home": {
-        "name": "Sweden",
-        "logo": "https://media.api-sports.io/football/teams/37.png"
+        "name": "Belgium",
+        "logo": "https://flagcdn.com/w80/be.png"
       },
       "away": {
-        "name": "Japan",
-        "logo": "https://media.api-sports.io/football/teams/136.png"
+        "name": "Iran",
+        "logo": "https://flagcdn.com/w80/ir.png"
       }
     },
     "goals": {
@@ -1148,7 +1217,8 @@
   },
   {
     "fixture": {
-      "id": 100038,
+      "id": 40,
+      "apiId": "679c9c8a5749c4077500e040",
       "date": "2026-06-21T22:00:00.000Z",
       "timestamp": 1782079200,
       "status": {
@@ -1158,12 +1228,12 @@
     },
     "teams": {
       "home": {
-        "name": "Spain",
-        "logo": "https://media.api-sports.io/football/teams/38.png"
+        "name": "Uruguay",
+        "logo": "https://flagcdn.com/w80/uy.png"
       },
       "away": {
-        "name": "Uruguay",
-        "logo": "https://media.api-sports.io/football/teams/137.png"
+        "name": "Cape Verde",
+        "logo": "https://flagcdn.com/w80/cv.png"
       }
     },
     "goals": {
@@ -1179,7 +1249,8 @@
   },
   {
     "fixture": {
-      "id": 100039,
+      "id": 38,
+      "apiId": "679c9c8a5749c4077500e038",
       "date": "2026-06-22T01:00:00.000Z",
       "timestamp": 1782090000,
       "status": {
@@ -1189,74 +1260,12 @@
     },
     "teams": {
       "home": {
-        "name": "Saudi Arabia",
-        "logo": "https://media.api-sports.io/football/teams/39.png"
-      },
-      "away": {
-        "name": "Cape Verde",
-        "logo": "https://media.api-sports.io/football/teams/138.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100040,
-      "date": "2026-06-22T04:00:00.000Z",
-      "timestamp": 1782100800,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "Belgium",
-        "logo": "https://media.api-sports.io/football/teams/40.png"
-      },
-      "away": {
         "name": "New Zealand",
-        "logo": "https://media.api-sports.io/football/teams/139.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100041,
-      "date": "2026-06-22T19:00:00.000Z",
-      "timestamp": 1782154800,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "Iran",
-        "logo": "https://media.api-sports.io/football/teams/41.png"
+        "logo": "https://flagcdn.com/w80/nz.png"
       },
       "away": {
         "name": "Egypt",
-        "logo": "https://media.api-sports.io/football/teams/140.png"
+        "logo": "https://flagcdn.com/w80/eg.png"
       }
     },
     "goals": {
@@ -1272,71 +1281,10 @@
   },
   {
     "fixture": {
-      "id": 100042,
-      "date": "2026-06-22T22:00:00.000Z",
-      "timestamp": 1782165600,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "France",
-        "logo": "https://media.api-sports.io/football/teams/42.png"
-      },
-      "away": {
-        "name": "Iraq",
-        "logo": "https://media.api-sports.io/football/teams/141.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100043,
-      "date": "2026-06-23T01:00:00.000Z",
-      "timestamp": 1782176400,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "Norway",
-        "logo": "https://media.api-sports.io/football/teams/43.png"
-      },
-      "away": {
-        "name": "Senegal",
-        "logo": "https://media.api-sports.io/football/teams/142.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 100044,
-      "date": "2026-06-23T04:00:00.000Z",
-      "timestamp": 1782187200,
+      "id": 43,
+      "apiId": "679c9c8a5749c4077500e043",
+      "date": "2026-06-22T17:00:00.000Z",
+      "timestamp": 1782147600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1345,11 +1293,11 @@
     "teams": {
       "home": {
         "name": "Argentina",
-        "logo": "https://media.api-sports.io/football/teams/44.png"
+        "logo": "https://flagcdn.com/w80/ar.png"
       },
       "away": {
-        "name": "Jordan",
-        "logo": "https://media.api-sports.io/football/teams/143.png"
+        "name": "Austria",
+        "logo": "https://flagcdn.com/w80/at.png"
       }
     },
     "goals": {
@@ -1365,9 +1313,10 @@
   },
   {
     "fixture": {
-      "id": 100045,
-      "date": "2026-06-23T19:00:00.000Z",
-      "timestamp": 1782241200,
+      "id": 41,
+      "apiId": "679c9c8a5749c4077500e041",
+      "date": "2026-06-22T21:00:00.000Z",
+      "timestamp": 1782162000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1375,12 +1324,12 @@
     },
     "teams": {
       "home": {
-        "name": "Austria",
-        "logo": "https://media.api-sports.io/football/teams/45.png"
+        "name": "France",
+        "logo": "https://flagcdn.com/w80/fr.png"
       },
       "away": {
-        "name": "Algeria",
-        "logo": "https://media.api-sports.io/football/teams/144.png"
+        "name": "Iraq",
+        "logo": "https://flagcdn.com/w80/iq.png"
       }
     },
     "goals": {
@@ -1396,9 +1345,106 @@
   },
   {
     "fixture": {
-      "id": 100046,
-      "date": "2026-06-23T22:00:00.000Z",
-      "timestamp": 1782252000,
+      "id": 42,
+      "apiId": "679c9c8a5749c4077500e042",
+      "date": "2026-06-23T00:00:00.000Z",
+      "timestamp": 1782172800,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Norway",
+        "logo": "https://flagcdn.com/w80/no.png"
+      },
+      "away": {
+        "name": "Senegal",
+        "logo": "https://flagcdn.com/w80/sn.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 44,
+      "apiId": "679c9c8a5749c4077500e044",
+      "date": "2026-06-23T03:00:00.000Z",
+      "timestamp": 1782183600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Jordan",
+        "logo": "https://flagcdn.com/w80/jo.png"
+      },
+      "away": {
+        "name": "Algeria",
+        "logo": "https://flagcdn.com/w80/dz.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 45,
+      "apiId": "679c9c8a5749c4077500e045",
+      "date": "2026-06-23T17:00:00.000Z",
+      "timestamp": 1782234000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Portugal",
+        "logo": "https://flagcdn.com/w80/pt.png"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "logo": "https://flagcdn.com/w80/uz.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 48,
+      "apiId": "679c9c8a5749c4077500e048",
+      "date": "2026-06-23T20:00:00.000Z",
+      "timestamp": 1782244800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1407,11 +1453,1867 @@
     "teams": {
       "home": {
         "name": "England",
-        "logo": "https://media.api-sports.io/football/teams/46.png"
+        "logo": "https://flagcdn.com/w80/gb-eng.png"
       },
       "away": {
-        "name": "Cameroon",
-        "logo": "https://media.api-sports.io/football/teams/145.png"
+        "name": "Ghana",
+        "logo": "https://flagcdn.com/w80/gh.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 46,
+      "apiId": "679c9c8a5749c4077500e046",
+      "date": "2026-06-23T23:00:00.000Z",
+      "timestamp": 1782255600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Panama",
+        "logo": "https://flagcdn.com/w80/pa.png"
+      },
+      "away": {
+        "name": "Croatia",
+        "logo": "https://flagcdn.com/w80/hr.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 47,
+      "apiId": "679c9c8a5749c4077500e047",
+      "date": "2026-06-24T02:00:00.000Z",
+      "timestamp": 1782266400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Colombia",
+        "logo": "https://flagcdn.com/w80/co.png"
+      },
+      "away": {
+        "name": "Democratic Republic of the Congo",
+        "logo": "https://flagcdn.com/w80/cd.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 53,
+      "apiId": "679c9c8a5749c4077500e053",
+      "date": "2026-06-24T19:00:00.000Z",
+      "timestamp": 1782327600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Bosnia and Herzegovina",
+        "logo": "https://flagcdn.com/w80/ba.png"
+      },
+      "away": {
+        "name": "Qatar",
+        "logo": "https://flagcdn.com/w80/qa.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 54,
+      "apiId": "679c9c8a5749c4077500e054",
+      "date": "2026-06-24T19:00:00.000Z",
+      "timestamp": 1782327600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Switzerland",
+        "logo": "https://flagcdn.com/w80/ch.png"
+      },
+      "away": {
+        "name": "Canada",
+        "logo": "https://flagcdn.com/w80/ca.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 49,
+      "apiId": "679c9c8a5749c4077500e049",
+      "date": "2026-06-24T22:00:00.000Z",
+      "timestamp": 1782338400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Scotland",
+        "logo": "https://flagcdn.com/w80/gb-sct.png"
+      },
+      "away": {
+        "name": "Brazil",
+        "logo": "https://flagcdn.com/w80/br.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 50,
+      "apiId": "679c9c8a5749c4077500e050",
+      "date": "2026-06-24T22:00:00.000Z",
+      "timestamp": 1782338400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Morocco",
+        "logo": "https://flagcdn.com/w80/ma.png"
+      },
+      "away": {
+        "name": "Haiti",
+        "logo": "https://flagcdn.com/w80/ht.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 51,
+      "apiId": "679c9c8a5749c4077500e051",
+      "date": "2026-06-25T01:00:00.000Z",
+      "timestamp": 1782349200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "South Africa",
+        "logo": "https://flagcdn.com/w80/za.png"
+      },
+      "away": {
+        "name": "South Korea",
+        "logo": "https://flagcdn.com/w80/kr.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 52,
+      "apiId": "679c9c8a5749c4077500e052",
+      "date": "2026-06-25T01:00:00.000Z",
+      "timestamp": 1782349200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Czech Republic",
+        "logo": "https://flagcdn.com/w80/cz.png"
+      },
+      "away": {
+        "name": "Mexico",
+        "logo": "https://flagcdn.com/w80/mx.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 55,
+      "apiId": "679c9c8a5749c4077500e055",
+      "date": "2026-06-25T20:00:00.000Z",
+      "timestamp": 1782417600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Curaçao",
+        "logo": "https://flagcdn.com/w80/cw.png"
+      },
+      "away": {
+        "name": "Ivory Coast",
+        "logo": "https://flagcdn.com/w80/ci.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 56,
+      "apiId": "679c9c8a5749c4077500e056",
+      "date": "2026-06-25T20:00:00.000Z",
+      "timestamp": 1782417600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Ecuador",
+        "logo": "https://flagcdn.com/w80/ec.png"
+      },
+      "away": {
+        "name": "Germany",
+        "logo": "https://flagcdn.com/w80/de.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 59,
+      "apiId": "679c9c8a5749c4077500e059",
+      "date": "2026-06-25T23:00:00.000Z",
+      "timestamp": 1782428400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Japan",
+        "logo": "https://flagcdn.com/w80/jp.png"
+      },
+      "away": {
+        "name": "Sweden",
+        "logo": "https://flagcdn.com/w80/se.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 60,
+      "apiId": "679c9c8a5749c4077500e060",
+      "date": "2026-06-25T23:00:00.000Z",
+      "timestamp": 1782428400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Tunisia",
+        "logo": "https://flagcdn.com/w80/tn.png"
+      },
+      "away": {
+        "name": "Netherlands",
+        "logo": "https://flagcdn.com/w80/nl.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 57,
+      "apiId": "679c9c8a5749c4077500e057",
+      "date": "2026-06-26T02:00:00.000Z",
+      "timestamp": 1782439200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Paraguay",
+        "logo": "https://flagcdn.com/w80/py.png"
+      },
+      "away": {
+        "name": "Australia",
+        "logo": "https://flagcdn.com/w80/au.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 58,
+      "apiId": "679c9c8a5749c4077500e058",
+      "date": "2026-06-26T02:00:00.000Z",
+      "timestamp": 1782439200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Turkey",
+        "logo": "https://flagcdn.com/w80/tr.png"
+      },
+      "away": {
+        "name": "United States",
+        "logo": "https://flagcdn.com/w80/us.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 61,
+      "apiId": "679c9c8a5749c4077500e061",
+      "date": "2026-06-26T19:00:00.000Z",
+      "timestamp": 1782500400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Senegal",
+        "logo": "https://flagcdn.com/w80/sn.png"
+      },
+      "away": {
+        "name": "Iraq",
+        "logo": "https://flagcdn.com/w80/iq.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 62,
+      "apiId": "679c9c8a5749c4077500e062",
+      "date": "2026-06-26T19:00:00.000Z",
+      "timestamp": 1782500400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Norway",
+        "logo": "https://flagcdn.com/w80/no.png"
+      },
+      "away": {
+        "name": "France",
+        "logo": "https://flagcdn.com/w80/fr.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 65,
+      "apiId": "679c9c8a5749c4077500e065",
+      "date": "2026-06-27T00:00:00.000Z",
+      "timestamp": 1782518400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Cape Verde",
+        "logo": "https://flagcdn.com/w80/cv.png"
+      },
+      "away": {
+        "name": "Saudi Arabia",
+        "logo": "https://flagcdn.com/w80/sa.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 66,
+      "apiId": "679c9c8a5749c4077500e066",
+      "date": "2026-06-27T00:00:00.000Z",
+      "timestamp": 1782518400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Uruguay",
+        "logo": "https://flagcdn.com/w80/uy.png"
+      },
+      "away": {
+        "name": "Spain",
+        "logo": "https://flagcdn.com/w80/es.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 63,
+      "apiId": "679c9c8a5749c4077500e063",
+      "date": "2026-06-27T03:00:00.000Z",
+      "timestamp": 1782529200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Egypt",
+        "logo": "https://flagcdn.com/w80/eg.png"
+      },
+      "away": {
+        "name": "Iran",
+        "logo": "https://flagcdn.com/w80/ir.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 64,
+      "apiId": "679c9c8a5749c4077500e064",
+      "date": "2026-06-27T03:00:00.000Z",
+      "timestamp": 1782529200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "New Zealand",
+        "logo": "https://flagcdn.com/w80/nz.png"
+      },
+      "away": {
+        "name": "Belgium",
+        "logo": "https://flagcdn.com/w80/be.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 67,
+      "apiId": "679c9c8a5749c4077500e067",
+      "date": "2026-06-27T21:00:00.000Z",
+      "timestamp": 1782594000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Panama",
+        "logo": "https://flagcdn.com/w80/pa.png"
+      },
+      "away": {
+        "name": "England",
+        "logo": "https://flagcdn.com/w80/gb-eng.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 68,
+      "apiId": "679c9c8a5749c4077500e068",
+      "date": "2026-06-27T21:00:00.000Z",
+      "timestamp": 1782594000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Croatia",
+        "logo": "https://flagcdn.com/w80/hr.png"
+      },
+      "away": {
+        "name": "Ghana",
+        "logo": "https://flagcdn.com/w80/gh.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 71,
+      "apiId": "679c9c8a5749c4077500e071",
+      "date": "2026-06-27T23:30:00.000Z",
+      "timestamp": 1782603000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Colombia",
+        "logo": "https://flagcdn.com/w80/co.png"
+      },
+      "away": {
+        "name": "Portugal",
+        "logo": "https://flagcdn.com/w80/pt.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 72,
+      "apiId": "679c9c8a5749c4077500e072",
+      "date": "2026-06-27T23:30:00.000Z",
+      "timestamp": 1782603000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Democratic Republic of the Congo",
+        "logo": "https://flagcdn.com/w80/cd.png"
+      },
+      "away": {
+        "name": "Uzbekistan",
+        "logo": "https://flagcdn.com/w80/uz.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 69,
+      "apiId": "679c9c8a5749c4077500e069",
+      "date": "2026-06-28T02:00:00.000Z",
+      "timestamp": 1782612000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Algeria",
+        "logo": "https://flagcdn.com/w80/dz.png"
+      },
+      "away": {
+        "name": "Austria",
+        "logo": "https://flagcdn.com/w80/at.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 70,
+      "apiId": "679c9c8a5749c4077500e070",
+      "date": "2026-06-28T02:00:00.000Z",
+      "timestamp": 1782612000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Jordan",
+        "logo": "https://flagcdn.com/w80/jo.png"
+      },
+      "away": {
+        "name": "Argentina",
+        "logo": "https://flagcdn.com/w80/ar.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 73,
+      "apiId": "679c9c8a5749c4077500e073",
+      "date": "2026-06-28T19:00:00.000Z",
+      "timestamp": 1782673200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Runner-up Group A",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group B",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 76,
+      "apiId": "679c9c8a5749c4077500e076",
+      "date": "2026-06-29T17:00:00.000Z",
+      "timestamp": 1782752400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group C",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group F",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 74,
+      "apiId": "679c9c8a5749c4077500e074",
+      "date": "2026-06-29T20:30:00.000Z",
+      "timestamp": 1782765000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group E",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group A/B/C/D/F",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 75,
+      "apiId": "679c9c8a5749c4077500e075",
+      "date": "2026-06-30T01:00:00.000Z",
+      "timestamp": 1782781200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group F",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group C",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 78,
+      "apiId": "679c9c8a5749c4077500e078",
+      "date": "2026-06-30T17:00:00.000Z",
+      "timestamp": 1782838800,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Runner-up Group E",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group I",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 77,
+      "apiId": "679c9c8a5749c4077500e077",
+      "date": "2026-06-30T21:00:00.000Z",
+      "timestamp": 1782853200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group I",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group C/D/F/G/H",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 79,
+      "apiId": "679c9c8a5749c4077500e079",
+      "date": "2026-07-01T01:00:00.000Z",
+      "timestamp": 1782867600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group A",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group C/E/F/H/I",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 80,
+      "apiId": "679c9c8a5749c4077500e07a",
+      "date": "2026-07-01T16:00:00.000Z",
+      "timestamp": 1782921600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group L",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group E/H/I/J/K",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 82,
+      "apiId": "679c9c8a5749c4077500e07c",
+      "date": "2026-07-01T20:00:00.000Z",
+      "timestamp": 1782936000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group G",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group A/E/H/I/J",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 81,
+      "apiId": "679c9c8a5749c4077500e07b",
+      "date": "2026-07-02T00:00:00.000Z",
+      "timestamp": 1782950400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group D",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group B/E/F/I/J",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 84,
+      "apiId": "679c9c8a5749c4077500e07e",
+      "date": "2026-07-02T19:00:00.000Z",
+      "timestamp": 1783018800,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group H",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group J",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 83,
+      "apiId": "679c9c8a5749c4077500e07d",
+      "date": "2026-07-02T23:00:00.000Z",
+      "timestamp": 1783033200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Runner-up Group K",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group L",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 85,
+      "apiId": "679c9c8a5749c4077500e07f",
+      "date": "2026-07-03T03:00:00.000Z",
+      "timestamp": 1783047600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group B",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group E/F/G/I/J",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 88,
+      "apiId": "679c9c8a5749c4077500e082",
+      "date": "2026-07-03T18:00:00.000Z",
+      "timestamp": 1783101600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Runner-up Group D",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group G",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 86,
+      "apiId": "679c9c8a5749c4077500e080",
+      "date": "2026-07-03T22:00:00.000Z",
+      "timestamp": 1783116000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group J",
+        "logo": ""
+      },
+      "away": {
+        "name": "Runner-up Group H",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 87,
+      "apiId": "679c9c8a5749c4077500e081",
+      "date": "2026-07-04T01:30:00.000Z",
+      "timestamp": 1783128600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Group K",
+        "logo": ""
+      },
+      "away": {
+        "name": "3rd Group D/E/I/J/L",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 90,
+      "apiId": "679c9c8a5749c4077500e084",
+      "date": "2026-07-04T17:00:00.000Z",
+      "timestamp": 1783184400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 73",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 75",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 89,
+      "apiId": "679c9c8a5749c4077500e083",
+      "date": "2026-07-04T21:00:00.000Z",
+      "timestamp": 1783198800,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 74",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 77",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 91,
+      "apiId": "679c9c8a5749c4077500e085",
+      "date": "2026-07-05T20:00:00.000Z",
+      "timestamp": 1783281600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 76",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 78",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 92,
+      "apiId": "679c9c8a5749c4077500e086",
+      "date": "2026-07-06T00:00:00.000Z",
+      "timestamp": 1783296000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 79",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 80",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 93,
+      "apiId": "679c9c8a5749c4077500e087",
+      "date": "2026-07-06T19:00:00.000Z",
+      "timestamp": 1783364400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 83",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 84",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 94,
+      "apiId": "679c9c8a5749c4077500e088",
+      "date": "2026-07-07T00:00:00.000Z",
+      "timestamp": 1783382400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 81",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 82",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 95,
+      "apiId": "679c9c8a5749c4077500e089",
+      "date": "2026-07-07T16:00:00.000Z",
+      "timestamp": 1783440000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 86",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 88",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 96,
+      "apiId": "679c9c8a5749c4077500e08a",
+      "date": "2026-07-07T20:00:00.000Z",
+      "timestamp": 1783454400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 85",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 87",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 97,
+      "apiId": "679c9c8a5749c4077500e08b",
+      "date": "2026-07-09T20:00:00.000Z",
+      "timestamp": 1783627200,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 89",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 90",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 98,
+      "apiId": "679c9c8a5749c4077500e08c",
+      "date": "2026-07-10T19:00:00.000Z",
+      "timestamp": 1783710000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 93",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 94",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 99,
+      "apiId": "679c9c8a5749c4077500e08d",
+      "date": "2026-07-11T21:00:00.000Z",
+      "timestamp": 1783803600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 91",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 92",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 100,
+      "apiId": "679c9c8a5749c4077500e08e",
+      "date": "2026-07-12T01:00:00.000Z",
+      "timestamp": 1783818000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 95",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 96",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 101,
+      "apiId": "679c9c8a5749c4077500e08f",
+      "date": "2026-07-14T19:00:00.000Z",
+      "timestamp": 1784055600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 97",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 98",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 102,
+      "apiId": "679c9c8a5749c4077500e090",
+      "date": "2026-07-15T19:00:00.000Z",
+      "timestamp": 1784142000,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 99",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 100",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 103,
+      "apiId": "679c9c8a5749c4077500e091",
+      "date": "2026-07-18T21:00:00.000Z",
+      "timestamp": 1784408400,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Loser Match 101",
+        "logo": ""
+      },
+      "away": {
+        "name": "Loser Match 102",
+        "logo": ""
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 104,
+      "apiId": "679c9c8a5749c4077500e092",
+      "date": "2026-07-19T19:00:00.000Z",
+      "timestamp": 1784487600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Winner Match 101",
+        "logo": ""
+      },
+      "away": {
+        "name": "Winner Match 102",
+        "logo": ""
       }
     },
     "goals": {

@@ -105,19 +105,10 @@ app.get('/api/match/:index/predictions', (req, res) => {
   }
 });
 
-// 4. On-demand sync with API-Football
+// 4. On-demand sync with API
 app.post('/api/sync', async (req, res) => {
   try {
-    const apiKey = req.body.apiKey || process.env.API_FOOTBALL_KEY;
-    const provider = req.body.provider || process.env.API_PROVIDER || 'api-sports';
-    
-    if (!apiKey) {
-      return res.status(400).json({ 
-        error: 'API Key missing. Provide it in the request body or configure API_FOOTBALL_KEY in .env file.' 
-      });
-    }
-    
-    const result = await apiService.syncWithApi(apiKey, provider);
+    const result = await apiService.syncWithApi();
     res.json({
       success: true,
       message: `Database successfully synced. ${result.updatedCount} matches updated.`,
