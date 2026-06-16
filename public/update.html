@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup 2026 - Aggiornamento Dati</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-container">
+        <i class="fa-solid fa-trophy logo-icon"></i>
+        <span class="logo-text">FIFA SCORE 2026</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-ranking-star"></i> Classifica</a></li>
+        <li><a href="next-match.html" id="nav-next-match"><i class="fa-solid fa-calendar-day"></i> Prossima Partita</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <h1>Aggiornamento Risultati & Score</h1>
+      <p>Sincronizza i dati delle partite con API-Football o simula l'avanzamento dei match</p>
+    </div>
+
+    <div class="dashboard-grid">
+      
+      <!-- Left Column: Sync Forms -->
+      <div>
+        <!-- API Sync Card -->
+        <section class="card">
+          <h2 class="card-title">
+            <i class="fa-solid fa-cloud-arrow-down" style="color: var(--accent-blue);"></i> API-Football Sync (Live)
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Scarica i risultati reali degli ultimi match giocati del Mondiale e ricalcola i punteggi di tutti i partecipanti.
+          </p>
+          
+          <div class="form-group">
+            <label class="form-label" for="api-key-input">API Key (API-Football)</label>
+            <input type="password" id="api-key-input" class="form-input" placeholder="Inserisci la tua API-Sports o RapidAPI Key">
+            <span style="font-size: 0.75rem; color: var(--text-secondary);">
+              Lascia vuoto per usare il valore della variabile <code>API_FOOTBALL_KEY</code> definita nel file <code>.env</code>.
+            </span>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="api-provider-select">Provider API</label>
+            <select id="api-provider-select" class="form-input">
+              <option value="api-sports">Direct API-Sports (v3.football.api-sports.io)</option>
+              <option value="rapidapi">RapidAPI (api-football-v1.p.rapidapi.com)</option>
+            </select>
+          </div>
+          
+          <div class="update-actions">
+            <button id="btn-sync-api" class="btn btn-gold">
+              <i class="fa-solid fa-sync"></i> Sincronizza con API-Football
+            </button>
+          </div>
+        </section>
+
+        <!-- Simulation Card -->
+        <section class="card" style="border-color: rgba(245, 158, 11, 0.2);">
+          <h2 class="card-title" style="color: var(--accent-gold);">
+            <i class="fa-solid fa-flask"></i> Sandbox di Simulazione (Offline)
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Non hai una chiave API? Nessun problema! Usa questi comandi per testare il funzionamento dell'applicazione e del calcolo dei punti.
+          </p>
+          
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <button id="btn-simulate" class="btn" style="background-color: var(--accent-green);">
+              <i class="fa-solid fa-play"></i> Simula Risultato Prossima Partita
+            </button>
+            <button id="btn-reset-games" class="btn btn-secondary">
+              <i class="fa-solid fa-trash-arrow-up"></i> Resetta Database a Default
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Status Log Console -->
+      <section class="card">
+        <h2 class="card-title">
+          <i class="fa-solid fa-terminal" style="color: var(--text-secondary);"></i> Output & Status Log
+        </h2>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+          Registro delle operazioni eseguite:
+        </p>
+        <div id="status-console" class="status-box">In attesa di comandi...</div>
+        <button id="btn-clear-console" class="btn btn-secondary" style="margin-top: 1rem; width: auto; font-size: 0.85rem; padding: 0.5rem 1rem;">
+          <i class="fa-solid fa-eraser"></i> Cancella log
+        </button>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 FIFA Score Tracker. Creato per il Mondiale 2026.</p>
+  </footer>
+
+  <script src="update.js"></script>
+</body>
+</html>

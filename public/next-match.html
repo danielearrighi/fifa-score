@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA World Cup 2026 - Pronostici Partite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo-container">
+        <i class="fa-solid fa-trophy logo-icon"></i>
+        <span class="logo-text">FIFA SCORE 2026</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fa-solid fa-ranking-star"></i> Classifica</a></li>
+        <li><a href="next-match.html" id="nav-next-match" class="active"><i class="fa-solid fa-calendar-day"></i> Prossima Partita</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="hero">
+      <h1>Pronostici dei Partecipanti</h1>
+      <p>Guarda cosa ha scommesso ogni giocatore per questa partita</p>
+    </div>
+
+    <!-- Match Header Card -->
+    <div id="match-header-container">
+      <div class="prediction-details-header">
+        <div class="empty-state" style="width: 100%;">
+          <div class="loader" style="margin-right: 8px;"></div> Caricamento dettagli incontro...
+        </div>
+      </div>
+    </div>
+
+    <!-- Match Navigation Controls -->
+    <div style="display: flex; justify-content: space-between; margin-bottom: 2rem; gap: 1rem;">
+      <button id="btn-prev-match" class="btn btn-secondary" style="width: auto; flex: 1;"><i class="fa-solid fa-chevron-left"></i> Match Precedente</button>
+      <button id="btn-next-match" class="btn btn-secondary" style="width: auto; flex: 1;">Match Successivo <i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Predictions Grid -->
+    <section class="card">
+      <h2 class="card-title">
+        <i class="fa-solid fa-clipboard-list" style="color: var(--accent-green);"></i> Pronostici Giocatori
+      </h2>
+      <div class="prediction-grid" id="predictions-grid-body">
+        <div class="empty-state" style="grid-column: 1 / -1;">
+          Caricamento pronostici in corso...
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 FIFA Score Tracker. Creato per il Mondiale 2026.</p>
+  </footer>
+
+  <script src="next-match.js"></script>
+</body>
+</html>
