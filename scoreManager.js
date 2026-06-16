@@ -131,5 +131,6 @@ module.exports = {
   getMatchOutcome,
   isMatchFinished,
   DATA_PATH,
-  GAMES_PATH
+  GAMES_PATH,
+  INITIAL_GAMES_PATH
 };
