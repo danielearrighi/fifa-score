@@ -2,8 +2,8 @@
   {
     "fixture": {
       "id": 100001,
-      "date": "2026-06-11T17:00:00Z",
-      "timestamp": 1781197200,
+      "date": "2026-06-11T23:00:00.000Z",
+      "timestamp": 1781218800,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -33,8 +33,8 @@
   {
     "fixture": {
       "id": 100002,
-      "date": "2026-06-11T20:30:00Z",
-      "timestamp": 1781209800,
+      "date": "2026-06-12T02:30:00.000Z",
+      "timestamp": 1781231400,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -64,8 +64,8 @@
   {
     "fixture": {
       "id": 100003,
-      "date": "2026-06-12T16:00:00Z",
-      "timestamp": 1781280000,
+      "date": "2026-06-12T22:00:00.000Z",
+      "timestamp": 1781301600,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -95,8 +95,8 @@
   {
     "fixture": {
       "id": 100004,
-      "date": "2026-06-12T19:30:00Z",
-      "timestamp": 1781292600,
+      "date": "2026-06-13T01:30:00.000Z",
+      "timestamp": 1781314200,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -126,8 +126,8 @@
   {
     "fixture": {
       "id": 100005,
-      "date": "2026-06-13T13:00:00Z",
-      "timestamp": 1781355600,
+      "date": "2026-06-13T19:00:00.000Z",
+      "timestamp": 1781377200,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -157,8 +157,8 @@
   {
     "fixture": {
       "id": 100006,
-      "date": "2026-06-13T16:00:00Z",
-      "timestamp": 1781366400,
+      "date": "2026-06-13T22:00:00.000Z",
+      "timestamp": 1781388000,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -188,8 +188,8 @@
   {
     "fixture": {
       "id": 100007,
-      "date": "2026-06-13T19:00:00Z",
-      "timestamp": 1781377200,
+      "date": "2026-06-14T01:00:00.000Z",
+      "timestamp": 1781398800,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -219,8 +219,8 @@
   {
     "fixture": {
       "id": 100008,
-      "date": "2026-06-13T22:00:00Z",
-      "timestamp": 1781388000,
+      "date": "2026-06-14T04:00:00.000Z",
+      "timestamp": 1781409600,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -250,8 +250,8 @@
   {
     "fixture": {
       "id": 100009,
-      "date": "2026-06-14T13:00:00Z",
-      "timestamp": 1781442000,
+      "date": "2026-06-14T19:00:00.000Z",
+      "timestamp": 1781463600,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -281,8 +281,8 @@
   {
     "fixture": {
       "id": 100010,
-      "date": "2026-06-14T16:00:00Z",
-      "timestamp": 1781452800,
+      "date": "2026-06-14T22:00:00.000Z",
+      "timestamp": 1781474400,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -312,8 +312,8 @@
   {
     "fixture": {
       "id": 100011,
-      "date": "2026-06-14T19:00:00Z",
-      "timestamp": 1781463600,
+      "date": "2026-06-15T01:00:00.000Z",
+      "timestamp": 1781485200,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -343,8 +343,8 @@
   {
     "fixture": {
       "id": 100012,
-      "date": "2026-06-14T22:00:00Z",
-      "timestamp": 1781474400,
+      "date": "2026-06-15T04:00:00.000Z",
+      "timestamp": 1781496000,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -374,8 +374,8 @@
   {
     "fixture": {
       "id": 100013,
-      "date": "2026-06-15T13:00:00Z",
-      "timestamp": 1781528400,
+      "date": "2026-06-15T19:00:00.000Z",
+      "timestamp": 1781550000,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -405,8 +405,8 @@
   {
     "fixture": {
       "id": 100014,
-      "date": "2026-06-15T16:00:00Z",
-      "timestamp": 1781539200,
+      "date": "2026-06-15T22:00:00.000Z",
+      "timestamp": 1781560800,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -436,8 +436,8 @@
   {
     "fixture": {
       "id": 100015,
-      "date": "2026-06-15T19:00:00Z",
-      "timestamp": 1781550000,
+      "date": "2026-06-16T01:00:00.000Z",
+      "timestamp": 1781571600,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -467,8 +467,8 @@
   {
     "fixture": {
       "id": 100016,
-      "date": "2026-06-15T22:00:00Z",
-      "timestamp": 1781560800,
+      "date": "2026-06-16T04:00:00.000Z",
+      "timestamp": 1781582400,
       "status": {
         "long": "Match Finished",
         "short": "FT"
@@ -498,8 +498,8 @@
   {
     "fixture": {
       "id": 100017,
-      "date": "2026-06-16T13:00:00Z",
-      "timestamp": 1781614800,
+      "date": "2026-06-16T19:00:00.000Z",
+      "timestamp": 1781636400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -529,8 +529,8 @@
   {
     "fixture": {
       "id": 100018,
-      "date": "2026-06-16T16:00:00Z",
-      "timestamp": 1781625600,
+      "date": "2026-06-16T22:00:00.000Z",
+      "timestamp": 1781647200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -560,8 +560,8 @@
   {
     "fixture": {
       "id": 100019,
-      "date": "2026-06-16T19:00:00Z",
-      "timestamp": 1781636400,
+      "date": "2026-06-17T01:00:00.000Z",
+      "timestamp": 1781658000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -591,8 +591,8 @@
   {
     "fixture": {
       "id": 100020,
-      "date": "2026-06-16T22:00:00Z",
-      "timestamp": 1781647200,
+      "date": "2026-06-17T04:00:00.000Z",
+      "timestamp": 1781668800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -622,8 +622,8 @@
   {
     "fixture": {
       "id": 100021,
-      "date": "2026-06-17T13:00:00Z",
-      "timestamp": 1781701200,
+      "date": "2026-06-17T19:00:00.000Z",
+      "timestamp": 1781722800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -653,8 +653,8 @@
   {
     "fixture": {
       "id": 100022,
-      "date": "2026-06-17T16:00:00Z",
-      "timestamp": 1781712000,
+      "date": "2026-06-17T22:00:00.000Z",
+      "timestamp": 1781733600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -684,8 +684,8 @@
   {
     "fixture": {
       "id": 100023,
-      "date": "2026-06-17T19:00:00Z",
-      "timestamp": 1781722800,
+      "date": "2026-06-18T01:00:00.000Z",
+      "timestamp": 1781744400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -715,8 +715,8 @@
   {
     "fixture": {
       "id": 100024,
-      "date": "2026-06-17T22:00:00Z",
-      "timestamp": 1781733600,
+      "date": "2026-06-18T04:00:00.000Z",
+      "timestamp": 1781755200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -746,8 +746,8 @@
   {
     "fixture": {
       "id": 100025,
-      "date": "2026-06-18T13:00:00Z",
-      "timestamp": 1781787600,
+      "date": "2026-06-18T19:00:00.000Z",
+      "timestamp": 1781809200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -777,8 +777,8 @@
   {
     "fixture": {
       "id": 100026,
-      "date": "2026-06-18T16:00:00Z",
-      "timestamp": 1781798400,
+      "date": "2026-06-18T22:00:00.000Z",
+      "timestamp": 1781820000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -808,8 +808,8 @@
   {
     "fixture": {
       "id": 100027,
-      "date": "2026-06-18T19:00:00Z",
-      "timestamp": 1781809200,
+      "date": "2026-06-19T01:00:00.000Z",
+      "timestamp": 1781830800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -839,8 +839,8 @@
   {
     "fixture": {
       "id": 100028,
-      "date": "2026-06-18T22:00:00Z",
-      "timestamp": 1781820000,
+      "date": "2026-06-19T04:00:00.000Z",
+      "timestamp": 1781841600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -870,8 +870,8 @@
   {
     "fixture": {
       "id": 100029,
-      "date": "2026-06-19T13:00:00Z",
-      "timestamp": 1781874000,
+      "date": "2026-06-19T19:00:00.000Z",
+      "timestamp": 1781895600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -901,8 +901,8 @@
   {
     "fixture": {
       "id": 100030,
-      "date": "2026-06-19T16:00:00Z",
-      "timestamp": 1781884800,
+      "date": "2026-06-19T22:00:00.000Z",
+      "timestamp": 1781906400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -932,8 +932,8 @@
   {
     "fixture": {
       "id": 100031,
-      "date": "2026-06-19T19:00:00Z",
-      "timestamp": 1781895600,
+      "date": "2026-06-20T01:00:00.000Z",
+      "timestamp": 1781917200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -963,8 +963,8 @@
   {
     "fixture": {
       "id": 100032,
-      "date": "2026-06-19T22:00:00Z",
-      "timestamp": 1781906400,
+      "date": "2026-06-20T04:00:00.000Z",
+      "timestamp": 1781928000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -994,8 +994,8 @@
   {
     "fixture": {
       "id": 100033,
-      "date": "2026-06-20T13:00:00Z",
-      "timestamp": 1781960400,
+      "date": "2026-06-20T19:00:00.000Z",
+      "timestamp": 1781982000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1025,8 +1025,8 @@
   {
     "fixture": {
       "id": 100034,
-      "date": "2026-06-20T16:00:00Z",
-      "timestamp": 1781971200,
+      "date": "2026-06-20T22:00:00.000Z",
+      "timestamp": 1781992800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1056,8 +1056,8 @@
   {
     "fixture": {
       "id": 100035,
-      "date": "2026-06-20T19:00:00Z",
-      "timestamp": 1781982000,
+      "date": "2026-06-21T01:00:00.000Z",
+      "timestamp": 1782003600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1087,8 +1087,8 @@
   {
     "fixture": {
       "id": 100036,
-      "date": "2026-06-20T22:00:00Z",
-      "timestamp": 1781992800,
+      "date": "2026-06-21T04:00:00.000Z",
+      "timestamp": 1782014400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1118,8 +1118,8 @@
   {
     "fixture": {
       "id": 100037,
-      "date": "2026-06-21T13:00:00Z",
-      "timestamp": 1782046800,
+      "date": "2026-06-21T19:00:00.000Z",
+      "timestamp": 1782068400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1149,8 +1149,8 @@
   {
     "fixture": {
       "id": 100038,
-      "date": "2026-06-21T16:00:00Z",
-      "timestamp": 1782057600,
+      "date": "2026-06-21T22:00:00.000Z",
+      "timestamp": 1782079200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1180,8 +1180,8 @@
   {
     "fixture": {
       "id": 100039,
-      "date": "2026-06-21T19:00:00Z",
-      "timestamp": 1782068400,
+      "date": "2026-06-22T01:00:00.000Z",
+      "timestamp": 1782090000,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1211,8 +1211,8 @@
   {
     "fixture": {
       "id": 100040,
-      "date": "2026-06-21T22:00:00Z",
-      "timestamp": 1782079200,
+      "date": "2026-06-22T04:00:00.000Z",
+      "timestamp": 1782100800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1242,8 +1242,8 @@
   {
     "fixture": {
       "id": 100041,
-      "date": "2026-06-22T13:00:00Z",
-      "timestamp": 1782133200,
+      "date": "2026-06-22T19:00:00.000Z",
+      "timestamp": 1782154800,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1273,8 +1273,8 @@
   {
     "fixture": {
       "id": 100042,
-      "date": "2026-06-22T16:00:00Z",
-      "timestamp": 1782144000,
+      "date": "2026-06-22T22:00:00.000Z",
+      "timestamp": 1782165600,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1304,8 +1304,8 @@
   {
     "fixture": {
       "id": 100043,
-      "date": "2026-06-22T19:00:00Z",
-      "timestamp": 1782154800,
+      "date": "2026-06-23T01:00:00.000Z",
+      "timestamp": 1782176400,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1335,8 +1335,8 @@
   {
     "fixture": {
       "id": 100044,
-      "date": "2026-06-22T22:00:00Z",
-      "timestamp": 1782165600,
+      "date": "2026-06-23T04:00:00.000Z",
+      "timestamp": 1782187200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1366,8 +1366,8 @@
   {
     "fixture": {
       "id": 100045,
-      "date": "2026-06-23T13:00:00Z",
-      "timestamp": 1782219600,
+      "date": "2026-06-23T19:00:00.000Z",
+      "timestamp": 1782241200,
       "status": {
         "long": "Not Started",
         "short": "NS"
@@ -1397,8 +1397,8 @@
   {
     "fixture": {
       "id": 100046,
-      "date": "2026-06-23T16:00:00Z",
-      "timestamp": 1782230400,
+      "date": "2026-06-23T22:00:00.000Z",
+      "timestamp": 1782252000,
       "status": {
         "long": "Not Started",
         "short": "NS"

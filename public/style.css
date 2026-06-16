@@ -621,3 +621,167 @@ footer {
   padding: 2rem;
   font-style: italic;
 }
+
+/* Mobile Optimization Utilities */
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .show-mobile {
+    display: inline !important;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+
+  /* Navbar styling for mobile */
+  .navbar {
+    flex-direction: column;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .logo-icon {
+    font-size: 1.6rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+    gap: 0.35rem;
+  }
+
+  /* Main container and Hero section */
+  main {
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .hero {
+    margin-bottom: 1.75rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  /* Card and layout optimization */
+  .card {
+    padding: 1.25rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* Leaderboard Table mobile view */
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.75rem 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  /* Ensure the table fits within card container without horizontal scroll */
+  .leaderboard-table th:first-child,
+  .leaderboard-table td:first-child {
+    width: 50px !important;
+  }
+
+  .leaderboard-table th:last-child,
+  .leaderboard-table td:last-child {
+    width: 85px !important;
+    text-align: right;
+  }
+
+  .rank-badge {
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
+  }
+
+  .player-score-badge {
+    font-size: 0.95rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  /* Match teams and scores on home page */
+  .match-teams {
+    gap: 0.5rem;
+  }
+
+  .team-flag-container {
+    width: 52px;
+    height: 52px;
+  }
+
+  .team-name {
+    font-size: 0.85rem;
+  }
+
+  .match-vs {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .match-card-content {
+    padding: 0.5rem 0;
+    gap: 1.25rem;
+  }
+
+  /* Next match / Prediction header card layout */
+  .prediction-details-header {
+    padding: 1rem !important;
+    gap: 1.25rem !important;
+  }
+
+  .pred-header-vs {
+    gap: 0.5rem !important;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pred-header-vs > div[style*="width: 100px"] {
+    width: 80px !important;
+  }
+
+  .pred-header-flag {
+    width: 42px;
+    height: 42px;
+  }
+
+  .pred-header-teams {
+    font-size: 0.85rem !important;
+  }
+
+  .prediction-details-header > div:last-child {
+    text-align: center !important;
+    align-items: center !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prediction-card {
+    padding: 1rem;
+  }
+}
+

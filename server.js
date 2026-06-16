@@ -128,7 +128,7 @@ app.post('/api/sync', async (req, res) => {
   }
 });
 
-// 5. Simulation route - Completes the next match with a random score
+// 5. Simulation route - Completes the next match with a random or user-specified score
 app.post('/api/simulate-match', (req, res) => {
   try {
     const nextMatchInfo = scoreManager.getNextMatch();
@@ -146,9 +146,29 @@ app.post('/api/simulate-match', (req, res) => {
       return res.status(404).json({ error: 'Match not found in games list.' });
     }
     
-    // Simulate scores (home: 0-4, away: 0-4)
-    const homeGoals = Math.floor(Math.random() * 5);
-    const awayGoals = Math.floor(Math.random() * 5);
+    // Parse specified goals if provided
+    let homeGoals;
+    let awayGoals;
+    
+    const reqHome = req.body.homeGoals;
+    const reqAway = req.body.awayGoals;
+    
+    if (reqHome !== undefined && reqHome !== null && reqHome !== '' &&
+        reqAway !== undefined && reqAway !== null && reqAway !== '') {
+      const parsedHome = parseInt(reqHome, 10);
+      const parsedAway = parseInt(reqAway, 10);
+      
+      if (!isNaN(parsedHome) && parsedHome >= 0 && !isNaN(parsedAway) && parsedAway >= 0) {
+        homeGoals = parsedHome;
+        awayGoals = parsedAway;
+      }
+    }
+    
+    // Fallback to random simulation (home: 0-4, away: 0-4) if not specified or invalid
+    if (homeGoals === undefined || awayGoals === undefined) {
+      homeGoals = Math.floor(Math.random() * 5);
+      awayGoals = Math.floor(Math.random() * 5);
+    }
     
     games[matchIndexInGames].goals = { home: homeGoals, away: awayGoals };
     games[matchIndexInGames].score = {
