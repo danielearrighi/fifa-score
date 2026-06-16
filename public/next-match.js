@@ -165,8 +165,9 @@ async function loadMatchDetails(index) {
     const awayFlag = getFlagUrl(match.teams.away.name, match.teams.away.logo);
     
     const isFinished = match.fixture.status.short === "FT" || match.fixture.status.short === "AET" || match.fixture.status.short === "PEN";
-    const statusText = isFinished ? 'Terminata' : 'Non Iniziata';
-    const statusClass = isFinished ? 'status-success' : 'status-error';
+    const isLive = match.fixture.status.short === "LIVE";
+    const statusText = isFinished ? 'Terminata' : (isLive ? 'In Corso' : 'Non Iniziata');
+    const statusClass = isFinished ? 'status-success' : (isLive ? 'status-warning' : 'status-error');
     
     // Build score display
     let scoreDisplay = '<span class="match-vs">VS</span>';
@@ -177,6 +178,18 @@ async function loadMatchDetails(index) {
             ${match.goals.home} - ${match.goals.away}
           </div>
           <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-green); font-weight: 600; letter-spacing: 0.05em;">Risultato Finale</span>
+        </div>
+      `;
+    } else if (isLive && match.goals.home !== null && match.goals.away !== null) {
+      scoreDisplay = `
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+          <div style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 800; color: #ff4757; letter-spacing: 0.1em; background-color: var(--bg-tertiary); padding: 0.2rem 1.2rem; border-radius: 0.75rem; border: 1px solid #ff4757; animation: pulse-live 2s infinite;">
+            ${match.goals.home} - ${match.goals.away}
+          </div>
+          <span style="font-size: 0.75rem; text-transform: uppercase; color: #ff4757; font-weight: 600; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.25rem;">
+            <span style="display: inline-block; width: 6px; height: 6px; background-color: #ff4757; border-radius: 50%; animation: blink 1s infinite;"></span>
+            In Corso
+          </span>
         </div>
       `;
     }

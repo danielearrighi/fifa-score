@@ -142,8 +142,12 @@ async function loadPlayerData(playerName) {
       
       // Format actual result display
       let resultDisplay = '-';
-      if (isFinished && game.goals.home !== null && game.goals.away !== null) {
-        resultDisplay = `${game.goals.home} - ${game.goals.away}`;
+      if (game.goals.home !== null && game.goals.away !== null) {
+        if (game.fixture.status.short === 'LIVE') {
+          resultDisplay = `<span style="font-weight: 700; color: #ff4757;">${game.goals.home} - ${game.goals.away}</span> <span style="font-size: 0.7rem; color: #ff4757; font-weight: bold; margin-left: 2px; animation: blink 1s infinite;">LIVE</span>`;
+        } else {
+          resultDisplay = `${game.goals.home} - ${game.goals.away}`;
+        }
       } else if (game.fixture.status.short === 'NS') {
         resultDisplay = `<span style="font-size: 0.8rem; color: var(--text-secondary); opacity: 0.7;">NS</span>`;
       } else {

@@ -99,7 +99,161 @@ async function syncWithApi(apiKey, provider) {
   };
 }
 
+// Function to sync only the next match (and any simultaneous matches)
+async function syncNextMatch() {
+  const nextMatchInfo = scoreManager.getNextMatch();
+  if (!nextMatchInfo || !nextMatchInfo.match || scoreManager.isMatchFinished(nextMatchInfo.match)) {
+    return {
+      updated: false,
+      message: 'All matches are finished. No matches left to sync.'
+    };
+  }
+
+  const targetMatch = nextMatchInfo.match;
+  const targetTimestamp = targetMatch.fixture.timestamp;
+
+  // Load existing games
+  scoreManager.initGamesFile();
+  let localGames = [];
+  try {
+    localGames = JSON.parse(fs.readFileSync(scoreManager.GAMES_PATH, 'utf8'));
+  } catch (err) {
+    console.error('Error reading games.json', err);
+    throw err;
+  }
+
+  // Find all matches with the same timestamp
+  const targets = localGames.filter(g => g.fixture.timestamp === targetTimestamp);
+  const targetIds = targets.map(t => t.fixture.id);
+
+  console.log(`Syncing next match(es) from API. Target IDs: ${targetIds.join(', ')}`);
+
+  // Fetch games from API
+  const apiGames = await fetchFixturesFromApi();
+  
+  // Map API games by their numeric ID
+  const apiGamesMap = {};
+  apiGames.forEach(g => {
+    apiGamesMap[parseInt(g.id, 10)] = g;
+  });
+
+  let updatedCount = 0;
+  let hasChanges = false;
+  const updatedMatchesInfo = [];
+
+  // Update local games based on matching ID
+  const updatedGames = localGames.map(localGame => {
+    const matchId = localGame.fixture.id;
+    
+    if (targetIds.includes(matchId)) {
+      const apiGame = apiGamesMap[matchId];
+      
+      if (apiGame) {
+        const wasFinished = scoreManager.isMatchFinished(localGame);
+        const isFinished = apiGame.finished === "TRUE";
+        const hasStarted = apiGame.time_elapsed !== "notstarted";
+        
+        let homeGoals = null;
+        let awayGoals = null;
+        let statusLong = "Not Started";
+        let statusShort = "NS";
+
+        if (isFinished) {
+          const parsedHome = parseInt(apiGame.home_score, 10);
+          const parsedAway = parseInt(apiGame.away_score, 10);
+          homeGoals = !isNaN(parsedHome) ? parsedHome : null;
+          awayGoals = !isNaN(parsedAway) ? parsedAway : null;
+          statusLong = "Match Finished";
+          statusShort = "FT";
+        } else if (hasStarted) {
+          const parsedHome = parseInt(apiGame.home_score, 10);
+          const parsedAway = parseInt(apiGame.away_score, 10);
+          homeGoals = !isNaN(parsedHome) ? parsedHome : null;
+          awayGoals = !isNaN(parsedAway) ? parsedAway : null;
+          statusLong = "In Progress";
+          statusShort = "LIVE";
+        }
+
+        // Check if anything actually changed
+        const goalsChanged = localGame.goals.home !== homeGoals || localGame.goals.away !== awayGoals;
+        const statusChanged = localGame.fixture.status.short !== statusShort;
+
+        if (goalsChanged || statusChanged) {
+          hasChanges = true;
+          if (!wasFinished && isFinished) {
+            updatedCount++;
+          }
+          
+          updatedMatchesInfo.push({
+            id: matchId,
+            teams: `${localGame.teams.home.name} vs ${localGame.teams.away.name}`,
+            oldStatus: localGame.fixture.status.short,
+            newStatus: statusShort,
+            oldScore: `${localGame.goals.home}-${localGame.goals.away}`,
+            newScore: `${homeGoals}-${awayGoals}`
+          });
+
+          return {
+            ...localGame,
+            fixture: {
+              ...localGame.fixture,
+              status: {
+                long: statusLong,
+                short: statusShort
+              }
+            },
+            goals: {
+              home: homeGoals,
+              away: awayGoals
+            },
+            score: {
+              fulltime: {
+                home: homeGoals,
+                away: awayGoals
+              }
+            }
+          };
+        }
+      }
+    }
+    
+    return localGame;
+  });
+
+  if (hasChanges) {
+    // Save the updated games back to games.json
+    fs.writeFileSync(scoreManager.GAMES_PATH, JSON.stringify(updatedGames, null, 2), 'utf8');
+    console.log(`Synced games database. Updated status/score for target matches.`);
+    
+    // Recalculate scores ONLY if at least one match was finished
+    let updatedPlayers = [];
+    if (updatedCount > 0) {
+      updatedPlayers = scoreManager.updateScores();
+    } else {
+      try {
+        updatedPlayers = JSON.parse(fs.readFileSync(scoreManager.DATA_PATH, 'utf8'));
+      } catch (err) {
+        console.error('Error reading data.json', err);
+      }
+    }
+    
+    return {
+      updated: true,
+      updatedCount,
+      updatedMatches: updatedMatchesInfo,
+      players: updatedPlayers
+    };
+  }
+
+  return {
+    updated: false,
+    message: 'No changes detected for the active match(es).',
+    targetIds
+  };
+}
+
 module.exports = {
   fetchFixturesFromApi,
-  syncWithApi
+  syncWithApi,
+  syncNextMatch
 };

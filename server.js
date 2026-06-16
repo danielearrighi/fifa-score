@@ -119,6 +119,88 @@ app.post('/api/sync', async (req, res) => {
   }
 });
 
+// 4b. Sync only the next match (and simultaneous matches) from the API - designed for automated schedules
+app.all('/api/update-next-match', async (req, res) => {
+  try {
+    const nextMatchInfo = scoreManager.getNextMatch();
+    if (!nextMatchInfo || !nextMatchInfo.match) {
+      return res.json({
+        success: true,
+        updated: false,
+        message: 'No upcoming matches found'
+      });
+    }
+
+    if (scoreManager.isMatchFinished(nextMatchInfo.match)) {
+      return res.json({
+        success: true,
+        updated: false,
+        message: 'All matches are finished. No matches left to sync.'
+      });
+    }
+
+    const targetMatch = nextMatchInfo.match;
+    const targetTimestamp = targetMatch.fixture.timestamp;
+    const nowInSeconds = Math.floor(Date.now() / 1000);
+    const elapsedSeconds = nowInSeconds - targetTimestamp;
+
+    if (elapsedSeconds >= 95 * 60) {
+      // Fetch from external API only if match started at least 95 minutes ago
+      const result = await apiService.syncNextMatch();
+      res.json({
+        success: true,
+        ...result
+      });
+    } else if (nowInSeconds < targetTimestamp) {
+      // Match not started yet, leave it as is
+      res.json({
+        success: true,
+        updated: false,
+        message: 'Match has not started yet. Left as is.'
+      });
+    } else {
+      // Match started but within 95 minutes, set status to "LIVE"
+      const games = JSON.parse(fs.readFileSync(scoreManager.GAMES_PATH, 'utf8'));
+      let hasChanges = false;
+      const updatedGames = games.map(game => {
+        if (game.fixture.timestamp === targetTimestamp && !scoreManager.isMatchFinished(game)) {
+          if (game.fixture.status.short !== 'LIVE') {
+            hasChanges = true;
+            return {
+              ...game,
+              fixture: {
+                ...game.fixture,
+                status: {
+                  long: "In Progress",
+                  short: "LIVE"
+                }
+              }
+            };
+          }
+        }
+        return game;
+      });
+
+      if (hasChanges) {
+        fs.writeFileSync(scoreManager.GAMES_PATH, JSON.stringify(updatedGames, null, 2), 'utf8');
+        res.json({
+          success: true,
+          updated: true,
+          message: 'Match is in progress. Status set to LIVE.'
+        });
+      } else {
+        res.json({
+          success: true,
+          updated: false,
+          message: 'Match is in progress and already set to LIVE.'
+        });
+      }
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // 5. Simulation route - Completes the next match with a random or user-specified score
 app.post('/api/simulate-match', (req, res) => {
   try {

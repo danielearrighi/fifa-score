@@ -518,8 +518,8 @@
       "date": "2026-06-16T19:00:00.000Z",
       "timestamp": 1781636400,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -533,13 +533,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       }
     }
   },
