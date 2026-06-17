@@ -550,8 +550,8 @@
       "date": "2026-06-16T22:00:00.000Z",
       "timestamp": 1781647200,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -565,13 +565,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 4
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 4
       }
     }
   },
@@ -582,8 +582,8 @@
       "date": "2026-06-17T01:00:00.000Z",
       "timestamp": 1781658000,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -597,13 +597,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       }
     }
   },
@@ -614,8 +614,8 @@
       "date": "2026-06-17T04:00:00.000Z",
       "timestamp": 1781668800,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -629,13 +629,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 1
       }
     }
   },
@@ -1538,38 +1538,6 @@
   {
     "fixture": {
       "id": 53,
-      "apiId": "679c9c8a5749c4077500e053",
-      "date": "2026-06-24T19:00:00.000Z",
-      "timestamp": 1782327600,
-      "status": {
-        "long": "Not Started",
-        "short": "NS"
-      }
-    },
-    "teams": {
-      "home": {
-        "name": "Bosnia and Herzegovina",
-        "logo": "https://flagcdn.com/w80/ba.png"
-      },
-      "away": {
-        "name": "Qatar",
-        "logo": "https://flagcdn.com/w80/qa.png"
-      }
-    },
-    "goals": {
-      "home": null,
-      "away": null
-    },
-    "score": {
-      "fulltime": {
-        "home": null,
-        "away": null
-      }
-    }
-  },
-  {
-    "fixture": {
-      "id": 54,
       "apiId": "679c9c8a5749c4077500e054",
       "date": "2026-06-24T19:00:00.000Z",
       "timestamp": 1782327600,
@@ -1586,6 +1554,38 @@
       "away": {
         "name": "Canada",
         "logo": "https://flagcdn.com/w80/ca.png"
+      }
+    },
+    "goals": {
+      "home": null,
+      "away": null
+    },
+    "score": {
+      "fulltime": {
+        "home": null,
+        "away": null
+      }
+    }
+  },
+  {
+    "fixture": {
+      "id": 54,
+      "apiId": "679c9c8a5749c4077500e053",
+      "date": "2026-06-24T19:00:00.000Z",
+      "timestamp": 1782327600,
+      "status": {
+        "long": "Not Started",
+        "short": "NS"
+      }
+    },
+    "teams": {
+      "home": {
+        "name": "Bosnia and Herzegovina",
+        "logo": "https://flagcdn.com/w80/ba.png"
+      },
+      "away": {
+        "name": "Qatar",
+        "logo": "https://flagcdn.com/w80/qa.png"
       }
     },
     "goals": {
