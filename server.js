@@ -144,8 +144,8 @@ app.all('/api/update-next-match', async (req, res) => {
     const nowInSeconds = Math.floor(Date.now() / 1000);
     const elapsedSeconds = nowInSeconds - targetTimestamp;
 
-    if (elapsedSeconds >= 95 * 60) {
-      // Fetch from external API only if match started at least 95 minutes ago
+    if (elapsedSeconds >= 115 * 60) {
+      // Fetch from external API only if match started at least 115 minutes ago
       const result = await apiService.syncNextMatch();
       res.json({
         success: true,
@@ -159,7 +159,7 @@ app.all('/api/update-next-match', async (req, res) => {
         message: 'Match has not started yet. Left as is.'
       });
     } else {
-      // Match started but within 95 minutes, set status to "LIVE"
+      // Match started but within 115 minutes, set status to "LIVE"
       const games = JSON.parse(fs.readFileSync(scoreManager.GAMES_PATH, 'utf8'));
       let hasChanges = false;
       const updatedGames = games.map(game => {

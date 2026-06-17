@@ -149,30 +149,20 @@ async function syncNextMatch() {
       const apiGame = apiGamesMap[matchId];
       
       if (apiGame) {
-        const wasFinished = scoreManager.isMatchFinished(localGame);
         const isFinished = apiGame.finished === "TRUE";
-        const hasStarted = apiGame.time_elapsed !== "notstarted";
         
-        let homeGoals = null;
-        let awayGoals = null;
-        let statusLong = "Not Started";
-        let statusShort = "NS";
-
-        if (isFinished) {
-          const parsedHome = parseInt(apiGame.home_score, 10);
-          const parsedAway = parseInt(apiGame.away_score, 10);
-          homeGoals = !isNaN(parsedHome) ? parsedHome : null;
-          awayGoals = !isNaN(parsedAway) ? parsedAway : null;
-          statusLong = "Match Finished";
-          statusShort = "FT";
-        } else if (hasStarted) {
-          const parsedHome = parseInt(apiGame.home_score, 10);
-          const parsedAway = parseInt(apiGame.away_score, 10);
-          homeGoals = !isNaN(parsedHome) ? parsedHome : null;
-          awayGoals = !isNaN(parsedAway) ? parsedAway : null;
-          statusLong = "In Progress";
-          statusShort = "LIVE";
+        if (!isFinished) {
+          // If the match is not finished yet, do not update anything
+          return localGame;
         }
+
+        const wasFinished = scoreManager.isMatchFinished(localGame);
+        const parsedHome = parseInt(apiGame.home_score, 10);
+        const parsedAway = parseInt(apiGame.away_score, 10);
+        const homeGoals = !isNaN(parsedHome) ? parsedHome : null;
+        const awayGoals = !isNaN(parsedAway) ? parsedAway : null;
+        const statusLong = "Match Finished";
+        const statusShort = "FT";
 
         // Check if anything actually changed
         const goalsChanged = localGame.goals.home !== homeGoals || localGame.goals.away !== awayGoals;
