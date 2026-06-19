@@ -123,12 +123,17 @@ async function loadNextMatch() {
 }
 
 // Update the page data when the tab is reactivated/resumed/focused
-let lastUpdate = 0;
+let lastUpdate = Date.now(); // Initialize with the page load time
 function updateData() {
   const now = Date.now();
-  if (now - lastUpdate < 2000) return; // Limit updates to once every 2 seconds
+  const fiveMinutes = 5 * 60 * 1000;
+  if (now - lastUpdate < fiveMinutes) {
+    const elapsedSeconds = Math.round((now - lastUpdate) / 1000);
+    console.log(`[FIFA SCORE] Dati caricati di recente (${elapsedSeconds}s fa). Salto l'aggiornamento.`);
+    return;
+  }
   lastUpdate = now;
-  console.log('[FIFA SCORE] Aggiornamento della pagina (leaderboard e prossimo incontro)...');
+  console.log('[FIFA SCORE] Sono passati più di 5 minuti dall\'ultimo caricamento. Aggiornamento in corso...');
   loadLeaderboard();
   loadNextMatch();
 }
