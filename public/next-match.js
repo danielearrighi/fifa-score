@@ -188,9 +188,59 @@ async function loadPredictions(index) {
     
     if (predictions.length === 0) {
       grid.innerHTML = `<div class="empty-state" style="grid-column: 1 / -1;">Nessun pronostico disponibile per questo match.</div>`;
+      const statsContainer = document.getElementById('predictions-stats-container');
+      if (statsContainer) statsContainer.style.display = 'none';
       return;
     }
     
+    // Calculate stats
+    const validPredictions = predictions.filter(p => ['1', 'X', '2'].includes(p.prediction));
+    const totalValid = validPredictions.length;
+    const statsContainer = document.getElementById('predictions-stats-container');
+    
+    if (totalValid > 0 && statsContainer) {
+      const count1 = predictions.filter(p => p.prediction === '1').length;
+      const countX = predictions.filter(p => p.prediction === 'X').length;
+      const count2 = predictions.filter(p => p.prediction === '2').length;
+      
+      const pct1 = Math.round((count1 / totalValid) * 100);
+      const pctX = Math.round((countX / totalValid) * 100);
+      const pct2 = Math.round((count2 / totalValid) * 100);
+      
+      statsContainer.innerHTML = `
+        <div class="stats-box">
+          <div class="stats-title">
+            <span><i class="fa-solid fa-chart-pie"></i> Distribuzione Pronostici</span>
+          </div>
+          <div class="stats-bar-container">
+            <div class="stats-bar-segment stats-bar-1" style="width: ${pct1}%" title="1: ${pct1}%"></div>
+            <div class="stats-bar-segment stats-bar-X" style="width: ${pctX}%" title="X: ${pctX}%"></div>
+            <div class="stats-bar-segment stats-bar-2" style="width: ${pct2}%" title="2: ${pct2}%"></div>
+          </div>
+          <div class="stats-legend">
+            <div class="legend-item">
+              <span class="legend-badge legend-badge-1">1</span>
+              <span class="legend-pct">${pct1}%</span>
+              <span class="legend-count">(${count1})</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-badge legend-badge-X">X</span>
+              <span class="legend-pct">${pctX}%</span>
+              <span class="legend-count">(${countX})</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-badge legend-badge-2">2</span>
+              <span class="legend-pct">${pct2}%</span>
+              <span class="legend-count">(${count2})</span>
+            </div>
+          </div>
+        </div>
+      `;
+      statsContainer.style.display = 'block';
+    } else if (statsContainer) {
+      statsContainer.style.display = 'none';
+    }
+
     grid.innerHTML = '';
     
     const outcome = window.currentMatchOutcome;

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIFA World Cup 2026 - Aggiornamento Dati</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
@@ -37,9 +37,9 @@
         <!-- API Sync Card -->
         <section class="card">
           <h2 class="card-title">
-            <i class="fa-solid fa-rotate" style="color: var(--accent-blue);"></i> Sincronizzazione Automatica
+            <i class="fa-solid fa-rotate text-blue"></i> Sincronizzazione Automatica
           </h2>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+          <p class="card-desc">
             Sincronizza in tempo reale i risultati di tutte le partite con i dati ufficiali e aggiorna i punteggi dei partecipanti.
           </p>
           
@@ -51,11 +51,11 @@
         </section>
 
         <!-- Manual Result Entry Card -->
-        <section class="card" style="border-color: rgba(245, 158, 11, 0.2);">
-          <h2 class="card-title" style="color: var(--accent-gold);">
+        <section class="card card-accent-gold">
+          <h2 class="card-title text-gold">
             <i class="fa-solid fa-pen-to-square"></i> Gestione Risultati (Manuale)
           </h2>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+          <p class="card-desc">
             Seleziona una qualsiasi partita per aggiornare il suo risultato o resettarla allo stato "Non Iniziata".
           </p>
           
@@ -68,48 +68,48 @@
           </div>
           
           <!-- Selected match info and manual result input -->
-          <div id="sim-next-match-container" style="display: none; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color); padding: 1.25rem; border-radius: 0.75rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
-            <div style="text-align: center; font-size: 0.75rem; text-transform: uppercase; color: var(--text-secondary); margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 600;">
+          <div id="sim-next-match-container" class="sim-match-container" style="display: none;">
+            <div class="sim-match-header">
               Partita Selezionata
             </div>
             
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem;">
+            <div class="sim-match-row">
               <!-- Home Team -->
-              <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-align: center;">
-                <div class="team-flag-container" style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color);">
-                  <img id="sim-home-logo" src="" alt="" style="width: 100%; height: 100%; object-fit: contain; padding: 4px;">
+              <div class="sim-match-team">
+                <div class="sim-match-flag">
+                  <img id="sim-home-logo" src="" alt="">
                 </div>
-                <span id="sim-home-name" style="font-size: 0.9rem; font-weight: 600; font-family: var(--font-display);">Casa</span>
+                <span id="sim-home-name" class="sim-match-name">Casa</span>
               </div>
               
               <!-- Input Fields -->
-              <div style="display: flex; align-items: center; gap: 0.75rem;">
-                <input type="number" id="sim-home-goals" class="form-input" min="0" placeholder="-" style="width: 55px; text-align: center; font-size: 1.2rem; font-weight: 700; padding: 0.5rem; font-family: var(--font-display);">
-                <span style="font-weight: 800; color: var(--text-secondary); font-size: 1.2rem;">:</span>
-                <input type="number" id="sim-away-goals" class="form-input" min="0" placeholder="-" style="width: 55px; text-align: center; font-size: 1.2rem; font-weight: 700; padding: 0.5rem; font-family: var(--font-display);">
+              <div class="sim-match-inputs">
+                <input type="number" id="sim-home-goals" class="form-input sim-match-goals-input" min="0" placeholder="-">
+                <span class="sim-match-separator">:</span>
+                <input type="number" id="sim-away-goals" class="form-input sim-match-goals-input" min="0" placeholder="-">
               </div>
               
               <!-- Away Team -->
-              <div style="flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; text-align: center;">
-                <div class="team-flag-container" style="width: 50px; height: 50px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border: 1px solid var(--border-color);">
-                  <img id="sim-away-logo" src="" alt="" style="width: 100%; height: 100%; object-fit: contain; padding: 4px;">
+              <div class="sim-match-team">
+                <div class="sim-match-flag">
+                  <img id="sim-away-logo" src="" alt="">
                 </div>
-                <span id="sim-away-name" style="font-size: 0.9rem; font-weight: 600; font-family: var(--font-display);">Trasferta</span>
+                <span id="sim-away-name" class="sim-match-name">Trasferta</span>
               </div>
             </div>
-            <p style="font-size: 0.75rem; color: var(--text-secondary); text-align: center; margin-top: 1rem; margin-bottom: 0;">
+            <p class="sim-match-info">
               <i class="fa-solid fa-circle-info"></i> Inserisci i gol per salvare il risultato, premi "Segna come Non Iniziata" per resettarla, oppure lascia vuoto e premi "Simula Risultato" per generarlo casualmente.
             </p>
           </div>
           
-          <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <button id="btn-fetch-realtime" class="btn" style="background-color: var(--accent-gold); color: #000; font-weight: bold;" disabled>
+          <div class="sim-actions-grid">
+            <button id="btn-fetch-realtime" class="btn btn-gold" disabled>
               <i class="fa-solid fa-cloud-arrow-down"></i> Recupera Risultato Realtime
             </button>
-            <button id="btn-save-result" class="btn" style="background-color: var(--accent-blue);" disabled>
+            <button id="btn-save-result" class="btn" disabled>
               <i class="fa-solid fa-save"></i> Salva Risultato
             </button>
-            <button id="btn-simulate" class="btn" style="background-color: var(--accent-green);" disabled>
+            <button id="btn-simulate" class="btn btn-green" disabled>
               <i class="fa-solid fa-play"></i> Simula Risultato Casuale
             </button>
             <button id="btn-reset-match" class="btn btn-secondary" disabled>
@@ -119,11 +119,11 @@
         </section>
 
         <!-- Recalculate Scores Card -->
-        <section class="card" style="border-color: rgba(16, 185, 129, 0.2);">
-          <h2 class="card-title" style="color: var(--accent-green);">
+        <section class="card card-accent-green">
+          <h2 class="card-title text-green">
             <i class="fa-solid fa-calculator"></i> Ricalcolo Classifica
           </h2>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+          <p class="card-desc">
             Confronta tutti i risultati reali salvati con i pronostici e aggiorna i punteggi dei giocatori.
           </p>
           <div class="update-actions">
@@ -137,13 +137,13 @@
       <!-- Right Column: Status Log Console -->
       <section class="card">
         <h2 class="card-title">
-          <i class="fa-solid fa-terminal" style="color: var(--text-secondary);"></i> Output & Status Log
+          <i class="fa-solid fa-terminal text-secondary"></i> Output & Status Log
         </h2>
-        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+        <p class="status-desc">
           Registro delle operazioni eseguite:
         </p>
         <div id="status-console" class="status-box">In attesa di comandi...</div>
-        <button id="btn-clear-console" class="btn btn-secondary" style="margin-top: 1rem; width: auto; font-size: 0.85rem; padding: 0.5rem 1rem;">
+        <button id="btn-clear-console" class="btn btn-secondary btn-sm mt-1">
           <i class="fa-solid fa-eraser"></i> Cancella log
         </button>
       </section>

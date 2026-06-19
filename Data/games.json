@@ -646,8 +646,8 @@
       "date": "2026-06-17T17:00:00.000Z",
       "timestamp": 1781715600,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -661,13 +661,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       }
     }
   },
@@ -678,8 +678,8 @@
       "date": "2026-06-17T20:00:00.000Z",
       "timestamp": 1781726400,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -693,13 +693,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 4,
+      "away": 2
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 2
       }
     }
   },
@@ -710,8 +710,8 @@
       "date": "2026-06-17T23:00:00.000Z",
       "timestamp": 1781737200,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -725,13 +725,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       }
     }
   },
@@ -742,8 +742,8 @@
       "date": "2026-06-18T02:00:00.000Z",
       "timestamp": 1781748000,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -757,13 +757,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 3
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 3
       }
     }
   },
@@ -774,8 +774,8 @@
       "date": "2026-06-18T16:00:00.000Z",
       "timestamp": 1781798400,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -789,13 +789,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 1
       }
     }
   },
@@ -806,8 +806,8 @@
       "date": "2026-06-18T19:00:00.000Z",
       "timestamp": 1781809200,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -821,13 +821,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 4,
+      "away": 1
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 4,
+        "away": 1
       }
     }
   },
@@ -838,8 +838,8 @@
       "date": "2026-06-18T22:00:00.000Z",
       "timestamp": 1781820000,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -853,13 +853,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 6,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 6,
+        "away": 0
       }
     }
   },
@@ -870,8 +870,8 @@
       "date": "2026-06-19T01:00:00.000Z",
       "timestamp": 1781830800,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -885,13 +885,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       }
     }
   },
