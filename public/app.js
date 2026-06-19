@@ -121,3 +121,24 @@ async function loadNextMatch() {
     `;
   }
 }
+
+// Update the page data when the tab is reactivated/resumed/focused
+let lastUpdate = 0;
+function updateData() {
+  const now = Date.now();
+  if (now - lastUpdate < 2000) return; // Limit updates to once every 2 seconds
+  lastUpdate = now;
+  console.log('[FIFA SCORE] Aggiornamento della pagina (leaderboard e prossimo incontro)...');
+  loadLeaderboard();
+  loadNextMatch();
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    updateData();
+  }
+});
+
+window.addEventListener('focus', () => {
+  updateData();
+});

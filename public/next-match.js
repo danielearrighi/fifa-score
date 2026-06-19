@@ -286,3 +286,26 @@ async function loadPredictions(index) {
     grid.innerHTML = `<div class="empty-state" style="grid-column: 1 / -1; color: var(--accent-red);"><i class="fa-solid fa-circle-exclamation"></i> ${err.message}</div>`;
   }
 }
+
+// Update the page data when the tab is reactivated/resumed/focused
+let lastUpdate = 0;
+function updateData() {
+  if (currentMatchIndex === null) return;
+  const now = Date.now();
+  if (now - lastUpdate < 2000) return; // Limit updates to once every 2 seconds
+  lastUpdate = now;
+  console.log('[FIFA SCORE] Aggiornamento dettagli match e pronostici...');
+  loadMatchDetails(currentMatchIndex);
+  loadPredictions(currentMatchIndex);
+  setupNavbarLink();
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    updateData();
+  }
+});
+
+window.addEventListener('focus', () => {
+  updateData();
+});

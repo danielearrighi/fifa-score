@@ -13,16 +13,18 @@ function getMatchOutcome(game) {
   return "2";
 }
 
+let currentPlayerName = null;
+
 document.addEventListener('DOMContentLoaded', () => {
   const urlParams = new URLSearchParams(window.location.search);
-  const playerName = urlParams.get('player');
+  currentPlayerName = urlParams.get('player');
   
-  if (!playerName) {
+  if (!currentPlayerName) {
     showError('Nessun giocatore specificato.');
     return;
   }
   
-  loadPlayerData(playerName);
+  loadPlayerData(currentPlayerName);
 });
 
 async function loadPlayerData(playerName) {
@@ -173,3 +175,24 @@ function showError(message) {
     `;
   }
 }
+
+// Update the page data when the tab is reactivated/resumed/focused
+let lastUpdate = 0;
+function updateData() {
+  if (!currentPlayerName) return;
+  const now = Date.now();
+  if (now - lastUpdate < 2000) return; // Limit updates to once every 2 seconds
+  lastUpdate = now;
+  console.log('[FIFA SCORE] Aggiornamento pronostici giocatore...');
+  loadPlayerData(currentPlayerName);
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    updateData();
+  }
+});
+
+window.addEventListener('focus', () => {
+  updateData();
+});
