@@ -246,6 +246,13 @@ main {
 .player-name {
   font-weight: 600;
   color: var(--text-primary);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+a.player-name:hover {
+  color: var(--accent-gold);
+  text-decoration: underline;
 }
 
 .player-score-badge {

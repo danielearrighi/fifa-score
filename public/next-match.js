@@ -272,7 +272,7 @@ async function loadPredictions(index) {
       card.style = borderStyle;
       card.innerHTML = `
         <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-          <span class="player-name">${p.player}</span>
+          <a href="player.html?player=${encodeURIComponent(p.player)}" class="player-name">${p.player}</a>
           <span style="font-size: 0.75rem; color: var(--text-secondary);">Score: ${p.score} pt</span>
           ${feedbackDisplay}
         </div>
@@ -289,9 +289,13 @@ async function loadPredictions(index) {
 
 // Update the page data when the tab is reactivated/resumed/focused
 let lastUpdate = Date.now(); // Initialize with the page load time
+let lastAttempt = 0;
 function updateData() {
   if (currentMatchIndex === null) return;
   const now = Date.now();
+  if (now - lastAttempt < 1000) return; // Ignore multiple triggers within 1 second
+  lastAttempt = now;
+
   const fiveMinutes = 5 * 60 * 1000;
   if (now - lastUpdate < fiveMinutes) {
     const elapsedSeconds = Math.round((now - lastUpdate) / 1000);

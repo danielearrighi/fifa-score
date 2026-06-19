@@ -124,8 +124,12 @@ async function loadNextMatch() {
 
 // Update the page data when the tab is reactivated/resumed/focused
 let lastUpdate = Date.now(); // Initialize with the page load time
+let lastAttempt = 0;
 function updateData() {
   const now = Date.now();
+  if (now - lastAttempt < 1000) return; // Ignore multiple triggers within 1 second
+  lastAttempt = now;
+
   const fiveMinutes = 5 * 60 * 1000;
   if (now - lastUpdate < fiveMinutes) {
     const elapsedSeconds = Math.round((now - lastUpdate) / 1000);
