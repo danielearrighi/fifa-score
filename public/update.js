@@ -188,20 +188,31 @@ document.addEventListener('DOMContentLoaded', () => {
     btnFetchRealtime.disabled = true;
 
     try {
-      const response = await fetch(`https://worldcup26.ir/get/games`);
+      const apiId = game.fixture.apiId;
+      const url = apiId ? `https://worldcup26.ir/get/game/${apiId}` : `https://worldcup26.ir/get/games`;
+      
+      const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`Risposta API non valida: ${response.status} ${response.statusText}`);
       }
 
       const data = await response.json();
-      if (!data.games || !Array.isArray(data.games)) {
-        throw new Error('Nessun dato partite restituito dall\'API.');
-      }
+      let apiGame;
 
-      // Find the match in the list of games by numeric ID
-      const apiGame = data.games.find(g => parseInt(g.id, 10) === game.fixture.id);
-      if (!apiGame) {
-        throw new Error(`Partita con ID ${game.fixture.id} non trovata nell'API.`);
+      if (apiId) {
+        if (!data.game) {
+          throw new Error(`Partita con ID ${apiId} non trovata nell'API.`);
+        }
+        apiGame = data.game;
+      } else {
+        if (!data.games || !Array.isArray(data.games)) {
+          throw new Error('Nessun dato partite restituito dall\'API.');
+        }
+        // Find the match in the list of games by numeric ID
+        apiGame = data.games.find(g => parseInt(g.id, 10) === game.fixture.id);
+        if (!apiGame) {
+          throw new Error(`Partita con ID ${game.fixture.id} non trovata nell'API.`);
+        }
       }
 
       const isFinished = apiGame.finished === "TRUE";
@@ -212,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
       simHomeGoalsInput.value = homeScore;
       simAwayGoalsInput.value = awayScore;
 
-      log(`Dati recuperati per ${game.teams.home.name} - ${game.teams.away.name}! Risultato: ${homeScore} - ${awayScore} (${isFinished ? 'Terminata' : 'In corso/Non iniziata'})`, 'success');
+      log(`Dati recuperati da ${url} per ${game.teams.home.name} - ${game.teams.away.name}! Risultato: ${homeScore} - ${awayScore} (${isFinished ? 'Terminata' : 'In corso/Non iniziata'})`, 'success');
       log(`Premi "Salva Risultato" per confermare ed applicare le modifiche.`, 'info');
     } catch (err) {
       log(`Errore nel recupero in tempo reale: ${err.message}`, 'error');

@@ -1,8 +1,8 @@
 const scoreManager = require('./scoreManager');
 const fs = require('fs');
 
-async function fetchFixturesFromApi() {
-  const url = 'https://worldcup26.ir/get/games';
+async function fetchFixturesFromApi(apiId = null) {
+  const url = apiId ? `https://worldcup26.ir/get/game/${apiId}` : 'https://worldcup26.ir/get/games';
   console.log(`Fetching games from ${url}...`);
   
   const response = await fetch(url, {
@@ -15,11 +15,17 @@ async function fetchFixturesFromApi() {
 
   const data = await response.json();
 
-  if (!data.games || !Array.isArray(data.games)) {
-    throw new Error('No games returned from API.');
+  if (apiId) {
+    if (!data.game) {
+      throw new Error(`No game returned from API for ID ${apiId}.`);
+    }
+    return [data.game];
+  } else {
+    if (!data.games || !Array.isArray(data.games)) {
+      throw new Error('No games returned from API.');
+    }
+    return data.games;
   }
-
-  return data.games;
 }
 
 // Function to update the games.json file with new data from API
@@ -129,7 +135,15 @@ async function syncNextMatch() {
   console.log(`Syncing next match(es) from API. Target IDs: ${targetIds.join(', ')}`);
 
   // Fetch games from API
-  const apiGames = await fetchFixturesFromApi();
+  const apiGamesPromises = targets.map(t => {
+    if (t.fixture.apiId) {
+      return fetchFixturesFromApi(t.fixture.apiId);
+    } else {
+      return fetchFixturesFromApi();
+    }
+  });
+  const apiGamesResults = await Promise.all(apiGamesPromises);
+  const apiGames = apiGamesResults.flat();
   
   // Map API games by their numeric ID
   const apiGamesMap = {};
