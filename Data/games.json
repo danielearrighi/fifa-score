@@ -1286,8 +1286,8 @@
       "date": "2026-06-22T17:00:00.000Z",
       "timestamp": 1782147600,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -1301,13 +1301,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 2,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 0
       }
     }
   },
@@ -1318,8 +1318,8 @@
       "date": "2026-06-22T21:00:00.000Z",
       "timestamp": 1782162000,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -1333,13 +1333,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 0
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 0
       }
     }
   },
@@ -1350,8 +1350,8 @@
       "date": "2026-06-23T00:00:00.000Z",
       "timestamp": 1782172800,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -1365,13 +1365,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 3,
+      "away": 2
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 2
       }
     }
   },
@@ -1382,8 +1382,8 @@
       "date": "2026-06-23T03:00:00.000Z",
       "timestamp": 1782183600,
       "status": {
-        "long": "Not Started",
-        "short": "NS"
+        "long": "Match Finished",
+        "short": "FT"
       }
     },
     "teams": {
@@ -1397,13 +1397,13 @@
       }
     },
     "goals": {
-      "home": null,
-      "away": null
+      "home": 1,
+      "away": 2
     },
     "score": {
       "fulltime": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 2
       }
     }
   },

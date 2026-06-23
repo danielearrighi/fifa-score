@@ -430,6 +430,7 @@ a.player-name:hover {
 }
 
 .prediction-card {
+  position: relative;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 0.75rem;
@@ -439,6 +440,13 @@ a.player-name:hover {
   align-items: center;
   transition: transform 0.2s ease, border-color 0.2s ease;
   box-shadow: var(--shadow-sm);
+}
+
+.prediction-card .rank-badge {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 2;
 }
 
 .prediction-card:hover {

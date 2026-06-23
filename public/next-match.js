@@ -246,6 +246,20 @@ async function loadPredictions(index) {
     const outcome = window.currentMatchOutcome;
     const isFinished = window.isCurrentMatchFinished;
     
+    // Sort players by their current ranking position (score descending)
+    predictions.sort((a, b) => b.score - a.score);
+    
+    // Calculate standard competition ranking (ties get the same rank)
+    predictions.forEach((p, index) => {
+      let rank = 1;
+      for (let i = 0; i < index; i++) {
+        if (predictions[i].score > p.score) {
+          rank++;
+        }
+      }
+      p.rank = rank;
+    });
+    
     predictions.forEach(p => {
       const pred = p.prediction;
       
@@ -267,10 +281,17 @@ async function loadPredictions(index) {
         }
       }
       
+      const rank = p.rank;
+      let rankClass = 'rank-other';
+      if (rank === 1) rankClass = 'rank-1';
+      else if (rank === 2) rankClass = 'rank-2';
+      else if (rank === 3) rankClass = 'rank-3';
+      
       const card = document.createElement('div');
       card.className = 'prediction-card';
       card.style = borderStyle;
       card.innerHTML = `
+        <span class="rank-badge ${rankClass}">${rank}</span>
         <div style="display: flex; flex-direction: column; gap: 0.25rem;">
           <a href="player.html?player=${encodeURIComponent(p.player)}" class="player-name">${p.player}</a>
           <span style="font-size: 0.75rem; color: var(--text-secondary);">Score: ${p.score} pt</span>
